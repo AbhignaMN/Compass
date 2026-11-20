@@ -37,12 +37,12 @@ Work proceeds in vertical slices: build -> test -> commit -> push to `origin/mai
   - [x] `build_roadmap(target_role)` retrieving `kb_chunks` via hybrid RAG and generating schema-validated JSON roadmap with chunk citations
   - [x] `GET /roadmap/{user_id}` and milestone persistence
   - [x] 15+ scripted multi-turn conversation scenarios testing mentor quality & memory
-- [ ] **Stage 7: UI + feedback logging**
-  - [ ] `GET /jobs/{id}`, `POST /feedback` (`shown`, `clicked`, `saved`, `dismissed`), anonymous cookie/localStorage identity
-  - [ ] Next.js (App Router) + TypeScript + Tailwind + Framer Motion UI ("Compass" brand)
-  - [ ] Three themes: Colourful (light), Midnight (dark navy), Mahogany (dark leather) with animated compass toggle
-  - [ ] Streaming chat, compass-dial fit scores, journey roadmap timeline, editable "Your profile" panel
-  - [ ] Desktop & mobile screenshots across all three palettes in `docs/screenshots/`
+- [x] **Stage 7: UI + feedback logging**
+  - [x] `GET /jobs/{id}`, `POST /feedback` (`shown`, `clicked`, `saved`, `dismissed`), anonymous cookie/localStorage identity
+  - [x] Next.js (App Router) + TypeScript + Tailwind + Framer Motion UI ("Compass" brand)
+  - [x] Three themes: Colourful (light), Midnight (dark navy), Mahogany (dark leather) with animated compass toggle
+  - [x] Streaming chat, compass-dial fit scores, journey roadmap timeline, editable "Your profile" panel
+  - [x] Desktop & mobile screenshots across all three palettes in `docs/screenshots/`
 - [ ] **Stage 8: Evals + results table**
   - [ ] Retrieval evals: 50 labelled test profiles, Recall@10 & nDCG@10 for vector-only, keyword-only, hybrid, hybrid+rerank -> `evals/results.md`
   - [ ] Generation evals: LLM-as-judge rubric (groundedness, relevance, actionability) on 30 conversations + hard `job_id` existence check

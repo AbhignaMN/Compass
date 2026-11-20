@@ -24,3 +24,5 @@ One-line log of non-obvious choices made while building **Compass** (for easy re
 - **Separate fast memory model (`LLM_MEMORY_MODEL`) for post-turn extraction and rolling summary**: Keeps turn latency and token cost low while maintaining durable cross-session recall.
 - **Citation enforcement on RAG roadmaps (`_enforce_grounded_sources`)**: Filters roadmap `sources[]` strictly to `source_url` entries retrieved from `kb_chunks` so no fake courses or URLs are fabricated.
 - **Unified `/feedback` endpoint mapping thumbs up/down to `interactions` (`saved`/`dismissed`)**: Feeds explicit UI reactions directly into `rank_jobs` boosts and penalties without a second table.
+- **Next.js App Router static export (`output: 'export'`) served by FastAPI**: Delivers a rich TypeScript + Tailwind + Framer Motion SPA inside a single Docker container and single Render web service with zero CORS friction.
+- **CSS-variable theme tokens (`[data-theme="colourful|midnight|mahogany"]`)**: Lets every component, card, chip, topo pattern, and SVG compass needle switch palettes smoothly with zero runtime re-styling hacks.

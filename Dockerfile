@@ -1,6 +1,15 @@
-# Multi-stage Dockerfile for Compass API (Python 3.11, non-root)
+# Multi-stage Dockerfile for Compass (Next.js static UI + Python 3.11 FastAPI, non-root)
 
-FROM python:3.11-slim AS builder
+FROM node:22-slim AS frontend-builder
+
+WORKDIR /frontend
+COPY frontend/package.json frontend/package-lock.json* ./
+RUN npm ci || npm install
+COPY frontend/ ./
+RUN npm run build
+
+
+FROM python:3.11-slim AS python-builder
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
@@ -29,12 +38,12 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 WORKDIR /app
 
-# Create non-root user and writable cache directory
 RUN groupadd --gid 10001 compass && \
     useradd --uid 10001 --gid compass --shell /bin/bash --create-home compass
 
-COPY --from=builder /opt/venv /opt/venv
+COPY --from=python-builder /opt/venv /opt/venv
 COPY --chown=compass:compass . /app
+COPY --from=frontend-builder --chown=compass:compass /frontend/out /app/frontend/out
 
 RUN mkdir -p /app/.fastembed_cache && \
     chown -R compass:compass /app/.fastembed_cache && \

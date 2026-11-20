@@ -12,7 +12,8 @@
 - [x] **Stage 4:** Hand-written tool-use agent loop (`app/agent/`, max 6 iterations, zero agent frameworks), 9 Pydantic-validated tools, retry-once output validation with safe fallback, strict `job_id` grounding, and JSON + SSE streaming `POST /chat`.
 - [x] **Stage 5:** Short-term rolling conversation summaries + post-turn long-term memory extractor (`app/services/memory.py`) with 384-dim cosine deduplication, conflict-aware updates (changed salary/city), and `GET/PATCH /profile` + `PATCH/DELETE /memories/{id}` endpoints.
 - [x] **Stage 6:** RAG-grounded `build_roadmap` with KB citations (`app/agent/roadmap.py`), `GET /jobs/{id}`, `POST /feedback`, `GET /roadmap/{user_id}`, and a 16-scenario scripted multi-turn conversation test suite (`tests/test_stage6_conversations.py`).
-- [ ] **Stages 7–10:** Next.js UI (Colourful / Midnight / Mahogany themes), evals, and Render + Neon deployment.
+- [x] **Stage 7:** Handcrafted Next.js (App Router) + TypeScript + Tailwind + Framer Motion UI (`frontend/`) with **Colourful**, **Midnight**, and **Mahogany** themes, compass-dial fit scores, N/E/S/W journey roadmaps, editable "Your Bearings" profile/memory panel, and verified desktop + mobile screenshots in `docs/screenshots/`.
+- [ ] **Stages 8–10:** Retrieval + generation evals (`evals/results.md`), GitHub Actions CI, Render + Neon deploy + smoke test, and final README polish.
 
 ## Sample Data & Live Ingestion
 

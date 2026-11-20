@@ -4,9 +4,11 @@ import logging
 import time
 import uuid
 from collections.abc import Awaitable, Callable
+from pathlib import Path
 
 from fastapi import FastAPI, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
 from slowapi.util import get_remote_address
@@ -75,6 +77,12 @@ def create_app() -> FastAPI:
     app.include_router(chat_router)
     app.include_router(profile_router)
     app.include_router(jobs_roadmap_router)
+
+    # Serve Next.js static export when built (enables single-container Docker/Render deploy)
+    frontend_out = Path(__file__).resolve().parent.parent / "frontend" / "out"
+    if frontend_out.is_dir():
+        app.mount("/", StaticFiles(directory=str(frontend_out), html=True), name="frontend")
+
     return app
 
 

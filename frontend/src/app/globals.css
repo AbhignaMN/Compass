@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================================================================
+   Compass Theme Tokens: Colourful (Light), Midnight (Navy), Mahogany (Leather)
+   ========================================================================= */
+
+:root,
+[data-theme="colourful"] {
+  --bg-canvas: #fbf6ec;
+  --bg-surface: #fffdf8;
+  --bg-surface-muted: #f4ebd9;
+  --text-primary: #132238;
+  --text-secondary: #394b63;
+  --accent-primary: #0e7c7b;
+  --accent-warm: #e75a4d;
+  --accent-gold: #c9831a;
+  --accent-leaf: #247a4b;
+  --needle-north: #e75a4d;
+  --needle-south: #0e7c7b;
+  --border-hairline: rgba(19, 34, 56, 0.16);
+  --border-brass: rgba(201, 131, 26, 0.48);
+  --chip-bg: rgba(14, 124, 123, 0.1);
+  --chip-text: #0a5c5b;
+  --user-bubble-bg: linear-gradient(135deg, #0e7c7b 0%, #175c7a 100%);
+  --user-bubble-text: #fffdf8;
+  --card-accent-strip: linear-gradient(90deg, #0e7c7b, #d99529, #e75a4d);
+  --shadow-card: 0 8px 28px -12px rgba(19, 34, 56, 0.14);
+  --shadow-glow: 0 0 0 rgba(217, 149, 41, 0);
+  --topo-stroke: rgba(19, 34, 56, 0.055);
+  --watermark-stroke: rgba(217, 149, 41, 0.11);
+}
+
+[data-theme="midnight"] {
+  --bg-canvas: #0b1426;
+  --bg-surface: #121f3a;
+  --bg-surface-muted: #18294a;
+  --text-primary: #f5efe2;
+  --text-secondary: #aebbd3;
+  --accent-primary: #c9a24b;
+  --accent-warm: #e6825c;
+  --accent-gold: #e0bb68;
+  --accent-leaf: #5dc293;
+  --needle-north: #e0bb68;
+  --needle-south: #5a78ad;
+  --border-hairline: rgba(201, 162, 75, 0.22);
+  --border-brass: rgba(201, 162, 75, 0.48);
+  --chip-bg: rgba(201, 162, 75, 0.14);
+  --chip-text: #f3d796;
+  --user-bubble-bg: linear-gradient(135deg, #243b6b 0%, #192c52 100%);
+  --user-bubble-text: #f5efe2;
+  --card-accent-strip: linear-gradient(90deg, #c9a24b, #f0cf80, #8a6d2e);
+  --shadow-card: 0 12px 34px -14px rgba(0, 0, 0, 0.65);
+  --shadow-glow: 0 0 18px rgba(201, 162, 75, 0.35);
+  --topo-stroke: rgba(201, 162, 75, 0.065);
+  --watermark-stroke: rgba(201, 162, 75, 0.09);
+}
+
+[data-theme="mahogany"] {
+  --bg-canvas: #1e1410;
+  --bg-surface: #2a1c16;
+  --bg-surface-muted: #36241d;
+  --text-primary: #f6ede1;
+  --text-secondary: #ccb7a4;
+  --accent-primary: #d4a853;
+  --accent-warm: #df7754;
+  --accent-gold: #e6be6c;
+  --accent-leaf: #73b986;
+  --needle-north: #e6be6c;
+  --needle-south: #9b6c52;
+  --border-hairline: rgba(212, 168, 83, 0.24);
+  --border-brass: rgba(212, 168, 83, 0.5);
+  --chip-bg: rgba(212, 168, 83, 0.15);
+  --chip-text: #f4d692;
+  --user-bubble-bg: linear-gradient(135deg, #543324 0%, #3d2419 100%);
+  --user-bubble-text: #f6ede1;
+  --card-accent-strip: linear-gradient(90deg, #d4a853, #df7754, #9c6e2c);
+  --shadow-card: 0 12px 34px -14px rgba(0, 0, 0, 0.72);
+  --shadow-glow: 0 0 18px rgba(212, 168, 83, 0.35);
+  --topo-stroke: rgba(212, 168, 83, 0.07);
+  --watermark-stroke: rgba(212, 168, 83, 0.1);
+}
+
+html,
+body {
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  transition: background-color 300ms ease, color 300ms ease;
+  overflow-x: hidden;
+}
+
+/* Subtle topographic contour lines background */
+.topo-bg {
+  background-color: var(--bg-canvas);
+  background-image: radial-gradient(
+      circle at 12% 18%,
+      var(--chip-bg) 0%,
+      transparent 38%
+    ),
+    radial-gradient(circle at 88% 82%, var(--chip-bg) 0%, transparent 42%);
+}
+
+.brass-border {
+  border: 1px solid var(--border-brass);
+}
+
+.user-bubble {
+  background: var(--user-bubble-bg);
+  color: var(--user-bubble-text);
+}
+
+.card-accent-strip {
+  background: var(--card-accent-strip);
+}
+
+.compass-glow {
+  filter: drop-shadow(var(--shadow-glow));
+}
+
+/* Custom slim scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-brass);
+  border-radius: 9999px;
+}
