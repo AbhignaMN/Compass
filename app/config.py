@@ -41,7 +41,7 @@ class Settings(BaseSettings):
         if self.llm_model:
             return self.llm_model
         if self.llm_provider == "groq":
-            return "llama-3.3-70b-versatile"
+            return "openai/gpt-oss-120b"
         if self.llm_provider == "gemini":
             return "gemini-2.5-flash"
         return self.claude_model
@@ -51,7 +51,7 @@ class Settings(BaseSettings):
         if self.llm_memory_model:
             return self.llm_memory_model
         if self.llm_provider == "groq":
-            return "llama-3.1-8b-instant"
+            return "openai/gpt-oss-20b"
         if self.llm_provider == "gemini":
             return "gemini-2.5-flash"
         return self.claude_memory_model

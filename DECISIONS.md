@@ -18,3 +18,5 @@ One-line log of non-obvious choices made while building **Compass** (for easy re
 - **Provider-agnostic thin LLM adapter (`LLM_PROVIDER=anthropic|groq|gemini`)**: Preserves first-class Anthropic Claude SDK support while enabling 100% free-tier Groq (`llama-3.3-70b-versatile`) or Gemini testing via one env var and zero agent frameworks.
 - **Hybrid search with separate pgvector + Postgres FTS queries merged via RRF (`k=60`)**: Combines semantic recall with exact tech-stack/location precision without fragile score-scale normalization.
 - **Importance-weighted skill overlap + exponential 30-day freshness decay**: Weights must-have skills 3x higher than nice-to-have skills and gently decays older postings without dropping evergreen matches.
+- **Turn-scoped DB job grounding (`TurnToolState`)**: Strips any LLM-emitted `job_id` that was not returned by DB tools in the same turn so hallucinated jobs or salaries can never reach the user.
+- **Retry-once structured output validation with safe fallback**: Feeds the exact Pydantic v2 error back to the LLM once on malformed JSON before falling back to a warm safe mentor response.

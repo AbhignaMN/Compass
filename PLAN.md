@@ -23,11 +23,11 @@ Work proceeds in vertical slices: build -> test -> commit -> push to `origin/mai
   - [x] `rank_jobs(profile, candidates)` with configurable weights (`0.5*semantic + 0.25*skill_overlap + 0.15*preference_fit + 0.1*freshness`) + interaction adjustments + component breakdown
   - [x] `skill_gap(user_id, job_id)` SQL query joining profile skills to `job_skills` ordered by importance
   - [x] Unit & DB retrieval tests
-- [ ] **Stage 4: Agent loop with tools and structured outputs**
-  - [ ] Hand-written Claude tool-use agent loop (no LangChain, max 6 iterations)
-  - [ ] Pydantic-validated tools: `update_profile`, `search_jobs`, `rank_jobs`, `skill_gap`, `compare_jobs`, `tailor_resume_summary`, `interview_prep_tips`, `recall_memory`
-  - [ ] Retry-once on Pydantic validation errors with safe fallback
-  - [ ] Mentor persona, grounded recommendations, SSE streaming `POST /chat`
+- [x] **Stage 4: Agent loop with tools and structured outputs**
+  - [x] Hand-written Claude tool-use agent loop (no LangChain, max 6 iterations)
+  - [x] Pydantic-validated tools: `update_profile`, `search_jobs`, `rank_jobs`, `skill_gap`, `compare_jobs`, `tailor_resume_summary`, `interview_prep_tips`, `recall_memory`
+  - [x] Retry-once on Pydantic validation errors with safe fallback
+  - [x] Mentor persona, grounded recommendations, SSE streaming `POST /chat`
 - [ ] **Stage 5: Memory (short-term summary + long-term extractor)**
   - [ ] Rolling conversation summary + last-N messages loader
   - [ ] Post-turn memory extractor (separate Claude JSON call) writing to `memories`
