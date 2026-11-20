@@ -36,6 +36,10 @@ def normalize_database_url(raw_url: str) -> tuple[str, dict[str, Any]]:
     elif sslmode == "disable":
         connect_args["ssl"] = False
 
+    # Neon PgBouncer transaction poolers require disabling asyncpg prepared statement cache
+    if parts.hostname and "-pooler." in parts.hostname:
+        connect_args["statement_cache_size"] = 0
+
     clean_url = urlunsplit(
         (parts.scheme, parts.netloc, parts.path, urlencode(query_params), parts.fragment)
     )

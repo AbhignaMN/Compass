@@ -11,3 +11,7 @@ One-line log of non-obvious choices made while building **Compass** (for easy re
 - **JSONB string list for `profiles.skills`**: Enables pure SQL set-difference joins against `job_skills` via `jsonb_array_elements_text` for deterministic, fast `skill_gap` queries.
 - **Single `CLAUDE_MODEL` config variable**: Allows switching between Claude Haiku/Sonnet/Opus without touching application code.
 - **Anonymous UUID identity via cookie + header (`X-Compass-User-Id`)**: Preserves cross-session memory immediately without login friction while supporting both browser and API clients.
+- **Neon `-pooler.` `statement_cache_size=0` handling**: Disables asyncpg prepared statement caching automatically when using PgBouncer transaction poolers on Neon.
+- **Deterministic 150-skill regex taxonomy over LLM skill extraction**: Guarantees zero cost, fast reproducible seeding, boundary-safe matching (`c++`, `node.js`, `ci/cd`), and consistent `skill_gap` SQL joins.
+- **`content_hash` SHA-256 change detection in `seed_jobs.py` and `ingest_jobs.py`**: Ensures re-runs only compute embeddings and refresh `job_skills` for newly added or modified rows.
+- **Heading-aware ~300-token markdown chunking for `kb_chunks`**: Preserves role and section context in each chunk's title for cleaner RAG citations in roadmaps.

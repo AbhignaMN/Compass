@@ -7,7 +7,14 @@
 ## Current Progress
 
 - [x] **Stage 1:** FastAPI async scaffold, structured JSON logging with request IDs, rate limiting, SQLAlchemy 2 + Alembic Postgres/pgvector schema (`docs/schema.md`), multi-stage `Dockerfile` + `docker-compose.yml`, and `GET /health`.
-- [ ] **Stages 2–10:** Seed & live job ingestion, hybrid retrieval & ranking, hand-written Claude agent loop, short/long-term memory, RAG roadmaps, Next.js UI (Colourful / Midnight / Mahogany themes), evals, and Render + Neon deployment.
+- [x] **Stage 2:** 320 sample India fresher/intern jobs (`data/jobs_seed.json`), deterministic 150-skill regex extractor, local `fastembed` embeddings (`BAAI/bge-small-en-v1.5`, 384 dims) with LRU cache, incremental live ingestion (`scripts/ingest_jobs.py` via Remotive/Arbeitnow), and 8 curated career guides (`data/kb/*.md`) chunked to ~300 tokens for RAG.
+- [ ] **Stages 3–10:** Hybrid retrieval & ranking, hand-written Claude agent loop, short/long-term memory, RAG roadmaps, Next.js UI (Colourful / Midnight / Mahogany themes), evals, and Render + Neon deployment.
+
+## Sample Data & Live Ingestion
+
+- **Sample seed data (`data/jobs_seed.json`)**: Contains **320 synthetic sample postings** tailored to Indian freshers and interns across AI/ML, Backend, Full-Stack, Data, Cybersecurity, QA/SDET, DevOps, and APM roles in Bengaluru, Hyderabad, Pune, Gurugram, Mumbai, Chennai, Noida, and Remote. Companies and URLs (`sample-jobs.compass.local`) are clearly marked as sample data (`source='seed'`).
+- **Live public ingestion (`scripts/ingest_jobs.py`)**: Pulls live postings from Remotive (with Arbeitnow fallback), strips HTML, normalizes fields, computes `content_hash`, upserts into `jobs`, extracts skills via regex, and re-embeds only newly added or modified rows.
+- **Career knowledge base (`data/kb/*.md`)**: 8 curated India-fresher career guides chunked to ~300 tokens and embedded into `kb_chunks` for citation-grounded roadmaps.
 
 ## Architecture (Stage 1 Foundation)
 

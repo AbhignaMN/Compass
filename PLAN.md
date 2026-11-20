@@ -12,12 +12,12 @@ Work proceeds in vertical slices: build -> test -> commit -> push to `origin/mai
   - [x] `docs/schema.md` documenting every table, column, and index
   - [x] `Dockerfile` (multi-stage, non-root) + `docker-compose.yml` (`api` + `pgvector/pgvector:pg16`)
   - [x] `GET /health` endpoint + Stage 1 unit tests
-- [ ] **Stage 2: Seed jobs, skills, embeddings, KB chunks**
-  - [ ] Curated ~150-skill taxonomy with deterministic regex matcher (`app/services/skills.py`)
-  - [ ] Local embedding service via `fastembed` (`BAAI/bge-small-en-v1.5`, 384 dims) with LRU cache
-  - [ ] 300+ realistic India fresher/intern job postings (`data/jobs_seed.json`) + `scripts/seed_jobs.py`
-  - [ ] Live ingestion script `scripts/ingest_jobs.py` (Remotive/Arbeitnow) with `content_hash` dedupe & incremental re-embedding
-  - [ ] Curated career guides (`data/kb/*.md`, 8 roles) + chunking (~300 tokens) & embedding loader
+- [x] **Stage 2: Seed jobs, skills, embeddings, KB chunks**
+  - [x] Curated ~150-skill taxonomy with deterministic regex matcher (`app/services/skills.py`)
+  - [x] Local embedding service via `fastembed` (`BAAI/bge-small-en-v1.5`, 384 dims) with LRU cache
+  - [x] 300+ realistic India fresher/intern job postings (`data/jobs_seed.json`) + `scripts/seed_jobs.py`
+  - [x] Live ingestion script `scripts/ingest_jobs.py` (Remotive/Arbeitnow) with `content_hash` dedupe & incremental re-embedding
+  - [x] Curated career guides (`data/kb/*.md`, 8 roles) + chunking (~300 tokens) & embedding loader
 - [ ] **Stage 3: Hybrid search + ranking + skill-gap SQL, with tests**
   - [ ] `hybrid_search(query, filters, k)` with pgvector cosine + Postgres FTS + RRF (`k=60`) and hard SQL filters
   - [ ] `rank_jobs(profile, candidates)` with configurable weights (`0.5*semantic + 0.25*skill_overlap + 0.15*preference_fit + 0.1*freshness`) + interaction adjustments + component breakdown
