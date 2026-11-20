@@ -18,11 +18,11 @@ Work proceeds in vertical slices: build -> test -> commit -> push to `origin/mai
   - [x] 300+ realistic India fresher/intern job postings (`data/jobs_seed.json`) + `scripts/seed_jobs.py`
   - [x] Live ingestion script `scripts/ingest_jobs.py` (Remotive/Arbeitnow) with `content_hash` dedupe & incremental re-embedding
   - [x] Curated career guides (`data/kb/*.md`, 8 roles) + chunking (~300 tokens) & embedding loader
-- [ ] **Stage 3: Hybrid search + ranking + skill-gap SQL, with tests**
-  - [ ] `hybrid_search(query, filters, k)` with pgvector cosine + Postgres FTS + RRF (`k=60`) and hard SQL filters
-  - [ ] `rank_jobs(profile, candidates)` with configurable weights (`0.5*semantic + 0.25*skill_overlap + 0.15*preference_fit + 0.1*freshness`) + interaction adjustments + component breakdown
-  - [ ] `skill_gap(user_id, job_id)` SQL query joining profile skills to `job_skills` ordered by importance
-  - [ ] Unit & DB retrieval tests
+- [x] **Stage 3: Hybrid search + ranking + skill-gap SQL, with tests**
+  - [x] `hybrid_search(query, filters, k)` with pgvector cosine + Postgres FTS + RRF (`k=60`) and hard SQL filters
+  - [x] `rank_jobs(profile, candidates)` with configurable weights (`0.5*semantic + 0.25*skill_overlap + 0.15*preference_fit + 0.1*freshness`) + interaction adjustments + component breakdown
+  - [x] `skill_gap(user_id, job_id)` SQL query joining profile skills to `job_skills` ordered by importance
+  - [x] Unit & DB retrieval tests
 - [ ] **Stage 4: Agent loop with tools and structured outputs**
   - [ ] Hand-written Claude tool-use agent loop (no LangChain, max 6 iterations)
   - [ ] Pydantic-validated tools: `update_profile`, `search_jobs`, `rank_jobs`, `skill_gap`, `compare_jobs`, `tailor_resume_summary`, `interview_prep_tips`, `recall_memory`

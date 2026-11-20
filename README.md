@@ -8,7 +8,8 @@
 
 - [x] **Stage 1:** FastAPI async scaffold, structured JSON logging with request IDs, rate limiting, SQLAlchemy 2 + Alembic Postgres/pgvector schema (`docs/schema.md`), multi-stage `Dockerfile` + `docker-compose.yml`, and `GET /health`.
 - [x] **Stage 2:** 320 sample India fresher/intern jobs (`data/jobs_seed.json`), deterministic 150-skill regex extractor, local `fastembed` embeddings (`BAAI/bge-small-en-v1.5`, 384 dims) with LRU cache, incremental live ingestion (`scripts/ingest_jobs.py` via Remotive/Arbeitnow), and 8 curated career guides (`data/kb/*.md`) chunked to ~300 tokens for RAG.
-- [ ] **Stages 3–10:** Hybrid retrieval & ranking, hand-written Claude agent loop, short/long-term memory, RAG roadmaps, Next.js UI (Colourful / Midnight / Mahogany themes), evals, and Render + Neon deployment.
+- [x] **Stage 3:** Hybrid search (`pgvector` HNSW cosine + Postgres FTS merged via RRF `k=60` with SQL hard filters), weighted reranking (`0.5*semantic + 0.25*skill_overlap + 0.15*preference_fit + 0.1*freshness` + interaction boosts/penalties), and pure SQL `skill_gap` analysis (`app/search/`).
+- [ ] **Stages 4–10:** Hand-written agent loop, short/long-term memory, RAG roadmaps, Next.js UI (Colourful / Midnight / Mahogany themes), evals, and Render + Neon deployment.
 
 ## Sample Data & Live Ingestion
 

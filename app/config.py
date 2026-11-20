@@ -25,11 +25,36 @@ class Settings(BaseSettings):
     # Database
     database_url: str = "postgresql+asyncpg://compass:compass@localhost:5432/compass"
 
-    # LLM (Anthropic Claude) — single config variable for model switching
+    # LLM (Anthropic Claude primary, plus free-tier Groq / Gemini adapters)
+    llm_provider: str = "anthropic"  # "anthropic" | "groq" | "gemini"
+    llm_model: str = ""
+    llm_memory_model: str = ""
     anthropic_api_key: str = ""
+    groq_api_key: str = ""
+    gemini_api_key: str = ""
     claude_model: str = "claude-sonnet-4-20250514"
     claude_memory_model: str = "claude-haiku-4-5-20251001"
     agent_max_iterations: int = 6
+
+    @property
+    def active_llm_model(self) -> str:
+        if self.llm_model:
+            return self.llm_model
+        if self.llm_provider == "groq":
+            return "llama-3.3-70b-versatile"
+        if self.llm_provider == "gemini":
+            return "gemini-2.5-flash"
+        return self.claude_model
+
+    @property
+    def active_memory_model(self) -> str:
+        if self.llm_memory_model:
+            return self.llm_memory_model
+        if self.llm_provider == "groq":
+            return "llama-3.1-8b-instant"
+        if self.llm_provider == "gemini":
+            return "gemini-2.5-flash"
+        return self.claude_memory_model
 
     # Local embeddings (fastembed)
     embedding_model: str = "BAAI/bge-small-en-v1.5"

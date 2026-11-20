@@ -15,3 +15,6 @@ One-line log of non-obvious choices made while building **Compass** (for easy re
 - **Deterministic 150-skill regex taxonomy over LLM skill extraction**: Guarantees zero cost, fast reproducible seeding, boundary-safe matching (`c++`, `node.js`, `ci/cd`), and consistent `skill_gap` SQL joins.
 - **`content_hash` SHA-256 change detection in `seed_jobs.py` and `ingest_jobs.py`**: Ensures re-runs only compute embeddings and refresh `job_skills` for newly added or modified rows.
 - **Heading-aware ~300-token markdown chunking for `kb_chunks`**: Preserves role and section context in each chunk's title for cleaner RAG citations in roadmaps.
+- **Provider-agnostic thin LLM adapter (`LLM_PROVIDER=anthropic|groq|gemini`)**: Preserves first-class Anthropic Claude SDK support while enabling 100% free-tier Groq (`llama-3.3-70b-versatile`) or Gemini testing via one env var and zero agent frameworks.
+- **Hybrid search with separate pgvector + Postgres FTS queries merged via RRF (`k=60`)**: Combines semantic recall with exact tech-stack/location precision without fragile score-scale normalization.
+- **Importance-weighted skill overlap + exponential 30-day freshness decay**: Weights must-have skills 3x higher than nice-to-have skills and gently decays older postings without dropping evergreen matches.
