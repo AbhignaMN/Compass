@@ -33,10 +33,10 @@ Work proceeds in vertical slices: build -> test -> commit -> push to `origin/mai
   - [x] Post-turn memory extractor (separate Claude JSON call) writing to `memories`
   - [x] Similarity-based deduplication & conflict updates (e.g., changed salary/location)
   - [x] Profile & memory view/edit/delete endpoints for UI side panel
-- [ ] **Stage 6: Roadmap with RAG and citations**
-  - [ ] `build_roadmap(target_role)` retrieving `kb_chunks` via hybrid RAG and generating schema-validated JSON roadmap with chunk citations
-  - [ ] `GET /roadmap/{user_id}` and milestone persistence
-  - [ ] 15+ scripted multi-turn conversation scenarios testing mentor quality & memory
+- [x] **Stage 6: Roadmap with RAG and citations**
+  - [x] `build_roadmap(target_role)` retrieving `kb_chunks` via hybrid RAG and generating schema-validated JSON roadmap with chunk citations
+  - [x] `GET /roadmap/{user_id}` and milestone persistence
+  - [x] 15+ scripted multi-turn conversation scenarios testing mentor quality & memory
 - [ ] **Stage 7: UI + feedback logging**
   - [ ] `GET /jobs/{id}`, `POST /feedback` (`shown`, `clicked`, `saved`, `dismissed`), anonymous cookie/localStorage identity
   - [ ] Next.js (App Router) + TypeScript + Tailwind + Framer Motion UI ("Compass" brand)

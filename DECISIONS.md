@@ -22,3 +22,5 @@ One-line log of non-obvious choices made while building **Compass** (for easy re
 - **Retry-once structured output validation with safe fallback**: Feeds the exact Pydantic v2 error back to the LLM once on malformed JSON before falling back to a warm safe mentor response.
 - **Two-tier memory merge (0.88 cosine dedupe + topic-aware conflict overwrite)**: Prevents duplicate memory bloat while updating changed salary, location, or remote expectations in place rather than keeping stale contradictions.
 - **Separate fast memory model (`LLM_MEMORY_MODEL`) for post-turn extraction and rolling summary**: Keeps turn latency and token cost low while maintaining durable cross-session recall.
+- **Citation enforcement on RAG roadmaps (`_enforce_grounded_sources`)**: Filters roadmap `sources[]` strictly to `source_url` entries retrieved from `kb_chunks` so no fake courses or URLs are fabricated.
+- **Unified `/feedback` endpoint mapping thumbs up/down to `interactions` (`saved`/`dismissed`)**: Feeds explicit UI reactions directly into `rank_jobs` boosts and penalties without a second table.

@@ -13,6 +13,7 @@ from slowapi.util import get_remote_address
 
 from app.api.chat import router as chat_router
 from app.api.health import router as health_router
+from app.api.jobs_roadmap import router as jobs_roadmap_router
 from app.api.profile import router as profile_router
 from app.config import get_settings
 from app.logging_config import configure_logging, request_id_ctx
@@ -73,6 +74,7 @@ def create_app() -> FastAPI:
     app.include_router(health_router)
     app.include_router(chat_router)
     app.include_router(profile_router)
+    app.include_router(jobs_roadmap_router)
     return app
 
 

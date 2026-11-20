@@ -11,7 +11,8 @@
 - [x] **Stage 3:** Hybrid search (`pgvector` HNSW cosine + Postgres FTS merged via RRF `k=60` with SQL hard filters), weighted reranking (`0.5*semantic + 0.25*skill_overlap + 0.15*preference_fit + 0.1*freshness` + interaction boosts/penalties), and pure SQL `skill_gap` analysis (`app/search/`).
 - [x] **Stage 4:** Hand-written tool-use agent loop (`app/agent/`, max 6 iterations, zero agent frameworks), 9 Pydantic-validated tools, retry-once output validation with safe fallback, strict `job_id` grounding, and JSON + SSE streaming `POST /chat`.
 - [x] **Stage 5:** Short-term rolling conversation summaries + post-turn long-term memory extractor (`app/services/memory.py`) with 384-dim cosine deduplication, conflict-aware updates (changed salary/city), and `GET/PATCH /profile` + `PATCH/DELETE /memories/{id}` endpoints.
-- [ ] **Stages 6–10:** RAG roadmaps, Next.js UI (Colourful / Midnight / Mahogany themes), evals, and Render + Neon deployment.
+- [x] **Stage 6:** RAG-grounded `build_roadmap` with KB citations (`app/agent/roadmap.py`), `GET /jobs/{id}`, `POST /feedback`, `GET /roadmap/{user_id}`, and a 16-scenario scripted multi-turn conversation test suite (`tests/test_stage6_conversations.py`).
+- [ ] **Stages 7–10:** Next.js UI (Colourful / Midnight / Mahogany themes), evals, and Render + Neon deployment.
 
 ## Sample Data & Live Ingestion
 
