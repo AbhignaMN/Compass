@@ -28,11 +28,11 @@ Work proceeds in vertical slices: build -> test -> commit -> push to `origin/mai
   - [x] Pydantic-validated tools: `update_profile`, `search_jobs`, `rank_jobs`, `skill_gap`, `compare_jobs`, `tailor_resume_summary`, `interview_prep_tips`, `recall_memory`
   - [x] Retry-once on Pydantic validation errors with safe fallback
   - [x] Mentor persona, grounded recommendations, SSE streaming `POST /chat`
-- [ ] **Stage 5: Memory (short-term summary + long-term extractor)**
-  - [ ] Rolling conversation summary + last-N messages loader
-  - [ ] Post-turn memory extractor (separate Claude JSON call) writing to `memories`
-  - [ ] Similarity-based deduplication & conflict updates (e.g., changed salary/location)
-  - [ ] Profile & memory view/edit/delete endpoints for UI side panel
+- [x] **Stage 5: Memory (short-term summary + long-term extractor)**
+  - [x] Rolling conversation summary + last-N messages loader
+  - [x] Post-turn memory extractor (separate Claude JSON call) writing to `memories`
+  - [x] Similarity-based deduplication & conflict updates (e.g., changed salary/location)
+  - [x] Profile & memory view/edit/delete endpoints for UI side panel
 - [ ] **Stage 6: Roadmap with RAG and citations**
   - [ ] `build_roadmap(target_role)` retrieving `kb_chunks` via hybrid RAG and generating schema-validated JSON roadmap with chunk citations
   - [ ] `GET /roadmap/{user_id}` and milestone persistence

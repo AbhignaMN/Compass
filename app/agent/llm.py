@@ -159,11 +159,16 @@ class LLMClient:
             endpoint = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
             api_key = self.settings.gemini_api_key
 
+        # Reasoning models (e.g. openai/gpt-oss-*) share max_tokens with internal CoT
+        effective_max_tokens = max_tokens
+        if any(tok in model.lower() for tok in ("gpt-oss", "qwen3", "r1")):
+            effective_max_tokens = max(max_tokens, 1024)
+
         oa_messages = [{"role": "system", "content": system}] + _to_openai_messages(messages)
         payload: dict[str, Any] = {
             "model": model,
             "messages": oa_messages,
-            "max_tokens": max_tokens,
+            "max_tokens": effective_max_tokens,
             "temperature": temperature,
         }
         if tools:
@@ -188,6 +193,11 @@ class LLMClient:
         }
         async with httpx.AsyncClient(timeout=httpx.Timeout(45.0)) as client:
             resp = await client.post(endpoint, headers=headers, json=payload)
+            if resp.status_code == 400 and json_mode and "json_validate_failed" in resp.text:
+                # Fallback gracefully if provider-side JSON grammar rejected reasoning tokens
+                logger.warning("Retrying %s call without strict response_format", provider)
+                payload.pop("response_format", None)
+                resp = await client.post(endpoint, headers=headers, json=payload)
             if resp.status_code >= 400:
                 logger.error("LLM %s HTTP %s: %s", provider, resp.status_code, resp.text[:400])
                 resp.raise_for_status()
