@@ -1,0 +1,1698 @@
+[
+  {
+    "id": "profile_01",
+    "query": "Python PyTorch AI LLM engineer internship Bengaluru",
+    "target_track": "ai_ml",
+    "skills": [
+      "python",
+      "pytorch",
+      "sql",
+      "git"
+    ],
+    "interests": [
+      "ai_ml",
+      "python",
+      "pytorch"
+    ],
+    "location_pref": "Bengaluru",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 25000,
+    "experience_level": "intern",
+    "relevant_jobs": {
+      "23a70970-5c8e-5392-b520-3e138c4e5935": 1,
+      "ded5f7ba-29b4-5d1b-926f-50fc2bb65fe5": 1,
+      "d5c9a8eb-08e7-5c17-980e-bd30914f1a70": 1,
+      "64e7486c-4bef-57e2-b515-fdc2610323af": 1,
+      "840b22b7-a262-5eb4-858f-b1dbb8395beb": 1,
+      "16408c1c-a331-5de9-b648-9820f8a0e5ca": 1,
+      "aea4a5ae-bd77-5fe9-b8d4-a31bf51a732d": 1,
+      "582cfa0b-b83d-5caf-9c60-85b03b20b8c0": 1,
+      "74cb9572-8b20-5c7a-9930-275b71e57378": 1,
+      "472b0a43-ffba-55a2-b401-277541573a1e": 1,
+      "a08bedda-2e00-510d-8097-414f5b949944": 1,
+      "c35bf571-f180-54d0-b0cb-20c6afb98cdf": 1,
+      "929507dc-48fb-5a21-b85f-8734668f3dc3": 1,
+      "6ee93e0e-28f4-5b74-a23e-5956c0f40924": 1,
+      "5f5e74fa-1649-58d5-b35f-ed67b2a2c87f": 1,
+      "2f7a7bfd-80bf-500d-afe5-e7d9f01bba94": 1,
+      "f0f00b43-667e-5dc4-ac42-3be018769c8b": 1,
+      "7d701319-00a0-5a9f-b6b4-64cc6fd98cf1": 1
+    }
+  },
+  {
+    "id": "profile_02",
+    "query": "Applied AI LLM RAG FastAPI pgvector fresher engineer Bengaluru",
+    "target_track": "ai_ml",
+    "skills": [
+      "python",
+      "llms",
+      "rag",
+      "fastapi",
+      "postgresql",
+      "pgvector"
+    ],
+    "interests": [
+      "ai_ml",
+      "python",
+      "llms"
+    ],
+    "location_pref": "Bengaluru",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 60000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "23a70970-5c8e-5392-b520-3e138c4e5935": 1,
+      "a6cd4bd2-fe81-51d8-9ae6-cab518ead5dd": 1,
+      "64e7486c-4bef-57e2-b515-fdc2610323af": 2,
+      "16408c1c-a331-5de9-b648-9820f8a0e5ca": 1,
+      "582cfa0b-b83d-5caf-9c60-85b03b20b8c0": 2,
+      "7a806647-1d8d-5cd3-a2a3-8b7458eac0f5": 1,
+      "74cb9572-8b20-5c7a-9930-275b71e57378": 1,
+      "472b0a43-ffba-55a2-b401-277541573a1e": 1,
+      "a08bedda-2e00-510d-8097-414f5b949944": 1,
+      "c35bf571-f180-54d0-b0cb-20c6afb98cdf": 1,
+      "929507dc-48fb-5a21-b85f-8734668f3dc3": 1,
+      "5f5e74fa-1649-58d5-b35f-ed67b2a2c87f": 1,
+      "f0f00b43-667e-5dc4-ac42-3be018769c8b": 1,
+      "e6d55023-ba3e-53b6-a8eb-d1381bbd9982": 2,
+      "a5fb9a3e-1ee2-566f-861f-f925954710eb": 1
+    }
+  },
+  {
+    "id": "profile_03",
+    "query": "Junior machine learning engineer scikit-learn pandas Hyderabad",
+    "target_track": "ai_ml",
+    "skills": [
+      "python",
+      "machine learning",
+      "scikit-learn",
+      "pandas",
+      "numpy"
+    ],
+    "interests": [
+      "ai_ml",
+      "python",
+      "machine learning"
+    ],
+    "location_pref": "Hyderabad",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 55000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "a6cd4bd2-fe81-51d8-9ae6-cab518ead5dd": 1,
+      "64e7486c-4bef-57e2-b515-fdc2610323af": 1,
+      "7a806647-1d8d-5cd3-a2a3-8b7458eac0f5": 1,
+      "2a3544ba-36c8-5a93-8493-b9689b849a43": 1,
+      "a08bedda-2e00-510d-8097-414f5b949944": 1,
+      "c35bf571-f180-54d0-b0cb-20c6afb98cdf": 1,
+      "929507dc-48fb-5a21-b85f-8734668f3dc3": 1,
+      "5f5e74fa-1649-58d5-b35f-ed67b2a2c87f": 1,
+      "f0f00b43-667e-5dc4-ac42-3be018769c8b": 1,
+      "5f209c51-35ba-5236-a9b4-27df68b343d6": 1,
+      "ecbd899e-f24d-560f-95d7-8e79da040f12": 1,
+      "e6d55023-ba3e-53b6-a8eb-d1381bbd9982": 1,
+      "a5fb9a3e-1ee2-566f-861f-f925954710eb": 1
+    }
+  },
+  {
+    "id": "profile_04",
+    "query": "Remote LLM AI agents internship Python Pydantic embeddings",
+    "target_track": "ai_ml",
+    "skills": [
+      "python",
+      "ai agents",
+      "pydantic",
+      "rest api",
+      "embeddings"
+    ],
+    "interests": [
+      "ai_ml",
+      "python",
+      "ai agents"
+    ],
+    "location_pref": "Remote",
+    "remote_only": true,
+    "remote_ok": true,
+    "salary_min": 25000,
+    "experience_level": "intern",
+    "relevant_jobs": {
+      "a6cd4bd2-fe81-51d8-9ae6-cab518ead5dd": 1,
+      "ded5f7ba-29b4-5d1b-926f-50fc2bb65fe5": 1,
+      "d5c9a8eb-08e7-5c17-980e-bd30914f1a70": 1,
+      "840b22b7-a262-5eb4-858f-b1dbb8395beb": 1,
+      "aea4a5ae-bd77-5fe9-b8d4-a31bf51a732d": 1,
+      "7a806647-1d8d-5cd3-a2a3-8b7458eac0f5": 1,
+      "c35bf571-f180-54d0-b0cb-20c6afb98cdf": 1,
+      "5f5e74fa-1649-58d5-b35f-ed67b2a2c87f": 1,
+      "7d701319-00a0-5a9f-b6b4-64cc6fd98cf1": 2
+    }
+  },
+  {
+    "id": "profile_05",
+    "query": "Associate NLP engineer Hugging Face deep learning Pune",
+    "target_track": "ai_ml",
+    "skills": [
+      "python",
+      "hugging face",
+      "nlp",
+      "deep learning",
+      "docker"
+    ],
+    "interests": [
+      "ai_ml",
+      "python",
+      "hugging face"
+    ],
+    "location_pref": "Pune",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 55000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "a6cd4bd2-fe81-51d8-9ae6-cab518ead5dd": 1,
+      "64e7486c-4bef-57e2-b515-fdc2610323af": 1,
+      "07970582-0a6b-5b22-ae67-2b04fb659649": 1,
+      "3f2c7455-251c-5c68-914c-cd5c9f8e712a": 1,
+      "7a806647-1d8d-5cd3-a2a3-8b7458eac0f5": 1,
+      "a08bedda-2e00-510d-8097-414f5b949944": 1,
+      "c35bf571-f180-54d0-b0cb-20c6afb98cdf": 1,
+      "929507dc-48fb-5a21-b85f-8734668f3dc3": 1,
+      "5f5e74fa-1649-58d5-b35f-ed67b2a2c87f": 1,
+      "f0f00b43-667e-5dc4-ac42-3be018769c8b": 1,
+      "983346d6-ff5e-5915-923e-f16146650508": 1,
+      "e6d55023-ba3e-53b6-a8eb-d1381bbd9982": 1,
+      "a5fb9a3e-1ee2-566f-861f-f925954710eb": 2
+    }
+  },
+  {
+    "id": "profile_06",
+    "query": "Junior computer vision PyTorch ONNX fresher Gurugram",
+    "target_track": "ai_ml",
+    "skills": [
+      "python",
+      "computer vision",
+      "pytorch",
+      "onnx",
+      "linux"
+    ],
+    "interests": [
+      "ai_ml",
+      "python",
+      "computer vision"
+    ],
+    "location_pref": "Gurugram",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 60000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "25d59201-562a-5107-bcb5-fc86f7e1af07": 1,
+      "a6cd4bd2-fe81-51d8-9ae6-cab518ead5dd": 1,
+      "64e7486c-4bef-57e2-b515-fdc2610323af": 1,
+      "7a806647-1d8d-5cd3-a2a3-8b7458eac0f5": 1,
+      "a08bedda-2e00-510d-8097-414f5b949944": 1,
+      "c35bf571-f180-54d0-b0cb-20c6afb98cdf": 1,
+      "929507dc-48fb-5a21-b85f-8734668f3dc3": 1,
+      "50cfd730-84ed-54f7-9cbc-74875094ca58": 1,
+      "5f5e74fa-1649-58d5-b35f-ed67b2a2c87f": 1,
+      "f0f00b43-667e-5dc4-ac42-3be018769c8b": 2,
+      "e6d55023-ba3e-53b6-a8eb-d1381bbd9982": 1,
+      "a5fb9a3e-1ee2-566f-861f-f925954710eb": 1
+    }
+  },
+  {
+    "id": "profile_07",
+    "query": "GenAI backend engineer RAG FastAPI remote India",
+    "target_track": "ai_ml",
+    "skills": [
+      "python",
+      "llms",
+      "rag",
+      "fastapi",
+      "docker"
+    ],
+    "interests": [
+      "ai_ml",
+      "python",
+      "llms"
+    ],
+    "location_pref": "Remote",
+    "remote_only": true,
+    "remote_ok": true,
+    "salary_min": 60000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "a6cd4bd2-fe81-51d8-9ae6-cab518ead5dd": 1,
+      "64e7486c-4bef-57e2-b515-fdc2610323af": 1,
+      "7a806647-1d8d-5cd3-a2a3-8b7458eac0f5": 1,
+      "a08bedda-2e00-510d-8097-414f5b949944": 1,
+      "c35bf571-f180-54d0-b0cb-20c6afb98cdf": 1,
+      "929507dc-48fb-5a21-b85f-8734668f3dc3": 1,
+      "5f5e74fa-1649-58d5-b35f-ed67b2a2c87f": 1,
+      "f0f00b43-667e-5dc4-ac42-3be018769c8b": 1,
+      "e6d55023-ba3e-53b6-a8eb-d1381bbd9982": 1,
+      "a5fb9a3e-1ee2-566f-861f-f925954710eb": 1
+    }
+  },
+  {
+    "id": "profile_08",
+    "query": "MLOps model serving intern PyTorch Bengaluru",
+    "target_track": "ai_ml",
+    "skills": [
+      "python",
+      "pytorch",
+      "docker",
+      "linux"
+    ],
+    "interests": [
+      "ai_ml",
+      "python",
+      "pytorch"
+    ],
+    "location_pref": "Bengaluru",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 30000,
+    "experience_level": "intern",
+    "relevant_jobs": {
+      "23a70970-5c8e-5392-b520-3e138c4e5935": 1,
+      "ded5f7ba-29b4-5d1b-926f-50fc2bb65fe5": 1,
+      "d5c9a8eb-08e7-5c17-980e-bd30914f1a70": 1,
+      "840b22b7-a262-5eb4-858f-b1dbb8395beb": 1,
+      "16408c1c-a331-5de9-b648-9820f8a0e5ca": 1,
+      "aea4a5ae-bd77-5fe9-b8d4-a31bf51a732d": 1,
+      "582cfa0b-b83d-5caf-9c60-85b03b20b8c0": 1,
+      "74cb9572-8b20-5c7a-9930-275b71e57378": 1,
+      "472b0a43-ffba-55a2-b401-277541573a1e": 1,
+      "a08bedda-2e00-510d-8097-414f5b949944": 1,
+      "c35bf571-f180-54d0-b0cb-20c6afb98cdf": 1,
+      "929507dc-48fb-5a21-b85f-8734668f3dc3": 1,
+      "6ee93e0e-28f4-5b74-a23e-5956c0f40924": 1,
+      "5f5e74fa-1649-58d5-b35f-ed67b2a2c87f": 1,
+      "2f7a7bfd-80bf-500d-afe5-e7d9f01bba94": 1,
+      "f0f00b43-667e-5dc4-ac42-3be018769c8b": 1,
+      "7d701319-00a0-5a9f-b6b4-64cc6fd98cf1": 1
+    }
+  },
+  {
+    "id": "profile_09",
+    "query": "Python FastAPI PostgreSQL backend engineer fresher Bengaluru",
+    "target_track": "backend",
+    "skills": [
+      "python",
+      "fastapi",
+      "postgresql",
+      "sql",
+      "rest api",
+      "git"
+    ],
+    "interests": [
+      "backend",
+      "python",
+      "fastapi"
+    ],
+    "location_pref": "Bengaluru",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 50000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "9535d076-59d4-5ad2-98c2-db2b53c03fe5": 2,
+      "273b1fc3-05d2-5587-aa2a-a23e0137b941": 1,
+      "6557be59-e42d-532a-a08c-885eb6e3b107": 1,
+      "0bc29be5-05c9-57b8-bc2b-8bf8bdd4cfc1": 1,
+      "ab98ac51-0539-5e57-b07e-95c89357d6f2": 1,
+      "2dc4d9d1-d1ce-517c-8e4c-49b2c768f607": 1,
+      "b2916988-2dd8-5703-b71d-0a617f75e723": 2,
+      "7d403f19-10f0-5e7d-988a-c05466886280": 2,
+      "023053fa-f01b-5278-9b6e-637094ef5d2c": 1,
+      "33d72026-6e30-5428-bdd5-ea0ab1184cc1": 1,
+      "597b81e0-de67-549a-90aa-86960bf4d091": 1,
+      "6fcdc15a-d9ba-5d46-a6d3-e5567f0341f1": 1,
+      "fbac40cf-9b52-5c0a-98e4-b4ff408d79bc": 1
+    }
+  },
+  {
+    "id": "profile_10",
+    "query": "Django Python PostgreSQL Redis backend developer Pune",
+    "target_track": "backend",
+    "skills": [
+      "python",
+      "django",
+      "postgresql",
+      "redis",
+      "docker",
+      "pytest"
+    ],
+    "interests": [
+      "backend",
+      "python",
+      "django"
+    ],
+    "location_pref": "Pune",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 45000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "6557be59-e42d-532a-a08c-885eb6e3b107": 1,
+      "ab98ac51-0539-5e57-b07e-95c89357d6f2": 1,
+      "8541add2-d95a-5e5f-9d94-1c68b48d0ba0": 1,
+      "2dc4d9d1-d1ce-517c-8e4c-49b2c768f607": 1,
+      "b2916988-2dd8-5703-b71d-0a617f75e723": 1,
+      "7d403f19-10f0-5e7d-988a-c05466886280": 1,
+      "337c7e6c-9798-5380-816d-715f492bbf84": 1,
+      "51acb256-d180-5590-a3f0-42196492abfc": 1,
+      "6fcdc15a-d9ba-5d46-a6d3-e5567f0341f1": 1
+    }
+  },
+  {
+    "id": "profile_11",
+    "query": "Junior Node.js TypeScript Express PostgreSQL backend Hyderabad",
+    "target_track": "backend",
+    "skills": [
+      "node.js",
+      "typescript",
+      "express.js",
+      "postgresql",
+      "rest api",
+      "oauth2"
+    ],
+    "interests": [
+      "backend",
+      "node.js",
+      "typescript"
+    ],
+    "location_pref": "Hyderabad",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 50000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "6557be59-e42d-532a-a08c-885eb6e3b107": 1,
+      "b21bd4e9-cc9e-5b61-9971-db41bd73f987": 1,
+      "ab98ac51-0539-5e57-b07e-95c89357d6f2": 2,
+      "2dc4d9d1-d1ce-517c-8e4c-49b2c768f607": 2,
+      "b2916988-2dd8-5703-b71d-0a617f75e723": 1,
+      "7d403f19-10f0-5e7d-988a-c05466886280": 1,
+      "d58f3de3-07d6-5ada-97cd-db05b678ecb0": 2,
+      "6fcdc15a-d9ba-5d46-a6d3-e5567f0341f1": 1
+    }
+  },
+  {
+    "id": "profile_12",
+    "query": "Java Spring Boot microservices backend fresher Bengaluru",
+    "target_track": "backend",
+    "skills": [
+      "java",
+      "spring boot",
+      "sql",
+      "mysql",
+      "microservices"
+    ],
+    "interests": [
+      "backend",
+      "java",
+      "spring boot"
+    ],
+    "location_pref": "Bengaluru",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 55000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "9535d076-59d4-5ad2-98c2-db2b53c03fe5": 1,
+      "273b1fc3-05d2-5587-aa2a-a23e0137b941": 1,
+      "6557be59-e42d-532a-a08c-885eb6e3b107": 1,
+      "0bc29be5-05c9-57b8-bc2b-8bf8bdd4cfc1": 1,
+      "ab98ac51-0539-5e57-b07e-95c89357d6f2": 1,
+      "2dc4d9d1-d1ce-517c-8e4c-49b2c768f607": 1,
+      "b2916988-2dd8-5703-b71d-0a617f75e723": 1,
+      "7d403f19-10f0-5e7d-988a-c05466886280": 1,
+      "023053fa-f01b-5278-9b6e-637094ef5d2c": 1,
+      "6fcdc15a-d9ba-5d46-a6d3-e5567f0341f1": 1,
+      "fbac40cf-9b52-5c0a-98e4-b4ff408d79bc": 1
+    }
+  },
+  {
+    "id": "profile_13",
+    "query": "Graduate Golang PostgreSQL gRPC backend engineer Gurugram",
+    "target_track": "backend",
+    "skills": [
+      "go",
+      "postgresql",
+      "grpc",
+      "docker",
+      "linux",
+      "redis"
+    ],
+    "interests": [
+      "backend",
+      "go",
+      "postgresql"
+    ],
+    "location_pref": "Gurugram",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 55000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "59b8ccd4-9a9f-5676-add2-f9fc8c481877": 1,
+      "6557be59-e42d-532a-a08c-885eb6e3b107": 2,
+      "ab98ac51-0539-5e57-b07e-95c89357d6f2": 1,
+      "2dc4d9d1-d1ce-517c-8e4c-49b2c768f607": 1,
+      "b2916988-2dd8-5703-b71d-0a617f75e723": 1,
+      "7d403f19-10f0-5e7d-988a-c05466886280": 1,
+      "5d478f9a-6470-54fe-a824-f8d044d49427": 1,
+      "5d63df87-42f9-5583-8646-62c8b893156d": 1,
+      "5ad0719c-35b9-5f08-93c4-3f2354644f67": 1,
+      "5d58a2b0-2057-5743-afc0-10d76b3b91de": 1,
+      "879cdd0e-954e-5444-8cda-a963415ef960": 1,
+      "d17deffe-8af7-57db-b986-1722fd78c8cb": 1,
+      "6fcdc15a-d9ba-5d46-a6d3-e5567f0341f1": 2,
+      "29674877-f601-50c9-a49d-b6db572280a2": 1
+    }
+  },
+  {
+    "id": "profile_14",
+    "query": "Backend engineering intern Python REST API Bengaluru",
+    "target_track": "backend",
+    "skills": [
+      "python",
+      "fastapi",
+      "sql",
+      "git"
+    ],
+    "interests": [
+      "backend",
+      "python",
+      "fastapi"
+    ],
+    "location_pref": "Bengaluru",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 22000,
+    "experience_level": "intern",
+    "relevant_jobs": {
+      "9535d076-59d4-5ad2-98c2-db2b53c03fe5": 1,
+      "6557be59-e42d-532a-a08c-885eb6e3b107": 1,
+      "b2916988-2dd8-5703-b71d-0a617f75e723": 1,
+      "7d403f19-10f0-5e7d-988a-c05466886280": 1,
+      "023053fa-f01b-5278-9b6e-637094ef5d2c": 1,
+      "33d72026-6e30-5428-bdd5-ea0ab1184cc1": 1,
+      "fbac40cf-9b52-5c0a-98e4-b4ff408d79bc": 1
+    }
+  },
+  {
+    "id": "profile_15",
+    "query": "Remote Python SQLAlchemy Alembic Celery backend developer",
+    "target_track": "backend",
+    "skills": [
+      "python",
+      "sqlalchemy",
+      "alembic",
+      "celery",
+      "postgresql"
+    ],
+    "interests": [
+      "backend",
+      "python",
+      "sqlalchemy"
+    ],
+    "location_pref": "Remote",
+    "remote_only": true,
+    "remote_ok": true,
+    "salary_min": 50000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "6557be59-e42d-532a-a08c-885eb6e3b107": 1,
+      "ab98ac51-0539-5e57-b07e-95c89357d6f2": 1,
+      "2dc4d9d1-d1ce-517c-8e4c-49b2c768f607": 1,
+      "b2916988-2dd8-5703-b71d-0a617f75e723": 1,
+      "7d403f19-10f0-5e7d-988a-c05466886280": 1,
+      "6fcdc15a-d9ba-5d46-a6d3-e5567f0341f1": 1
+    }
+  },
+  {
+    "id": "profile_16",
+    "query": "Junior API microservices backend developer Mumbai",
+    "target_track": "backend",
+    "skills": [
+      "node.js",
+      "typescript",
+      "rest api",
+      "postgresql"
+    ],
+    "interests": [
+      "backend",
+      "node.js",
+      "typescript"
+    ],
+    "location_pref": "Mumbai",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 50000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "c4638295-6f8e-50f4-81fd-7f933857b484": 1,
+      "6557be59-e42d-532a-a08c-885eb6e3b107": 1,
+      "c050e3fa-a563-550a-b25b-9f0f823416e1": 1,
+      "ab98ac51-0539-5e57-b07e-95c89357d6f2": 1,
+      "2dc4d9d1-d1ce-517c-8e4c-49b2c768f607": 1,
+      "b2916988-2dd8-5703-b71d-0a617f75e723": 1,
+      "7d403f19-10f0-5e7d-988a-c05466886280": 1,
+      "9d8240f0-49e3-5859-a696-fcb49a282b69": 1,
+      "b8dcec57-3ae9-5caa-89de-56750a53c466": 1,
+      "b94236e8-2983-5fc2-9dbb-94b7f14ff66c": 1,
+      "6fcdc15a-d9ba-5d46-a6d3-e5567f0341f1": 1
+    }
+  },
+  {
+    "id": "profile_17",
+    "query": "Full-stack Next.js TypeScript React Tailwind Node.js Bengaluru",
+    "target_track": "fullstack",
+    "skills": [
+      "typescript",
+      "react",
+      "next.js",
+      "tailwind css",
+      "node.js",
+      "postgresql"
+    ],
+    "interests": [
+      "fullstack",
+      "typescript",
+      "react"
+    ],
+    "location_pref": "Bengaluru",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 50000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "5e79ce07-819a-591f-bf16-54a66cbc5926": 1,
+      "03a580c6-314b-53d6-b3ec-57a155e4891c": 1,
+      "e0f7df69-a68f-5511-88ae-ea3600b9e1bf": 2,
+      "d6d089c9-36c9-5fdc-9078-11ae9619e2e2": 1,
+      "18cad28e-3e9c-5065-9a3b-0c56bcbea21b": 2,
+      "4add4fa4-c6f3-5523-a51c-b49f8133e3d0": 1,
+      "baa0154e-9b3d-5641-a9fe-f2150a0ffa17": 1,
+      "71db2bb2-e235-5c43-a286-525226fbec7c": 2,
+      "bfa42817-aa33-5c23-9e83-915f79ae983d": 1,
+      "226cc727-0266-59f1-b236-96b44e6631b5": 2,
+      "35113485-ad97-5e28-96a6-48282e2acdd8": 2,
+      "7302c949-71fb-59ab-a240-18f7e4b75622": 1,
+      "166769c9-3c9a-5b14-b18f-939093e1bed0": 2,
+      "ff03bb93-0810-54db-8b3a-2fdb1becd518": 1
+    }
+  },
+  {
+    "id": "profile_18",
+    "query": "Frontend React JavaScript HTML CSS fresher Pune",
+    "target_track": "fullstack",
+    "skills": [
+      "javascript",
+      "react",
+      "html",
+      "css",
+      "rest api",
+      "git"
+    ],
+    "interests": [
+      "fullstack",
+      "javascript",
+      "react"
+    ],
+    "location_pref": "Pune",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 45000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "03a580c6-314b-53d6-b3ec-57a155e4891c": 1,
+      "e0f7df69-a68f-5511-88ae-ea3600b9e1bf": 1,
+      "d6d089c9-36c9-5fdc-9078-11ae9619e2e2": 1,
+      "18cad28e-3e9c-5065-9a3b-0c56bcbea21b": 1,
+      "a753f455-7304-5cca-9f11-3812419ec1cb": 1,
+      "87b0b583-2c89-5a0b-b824-b54a1389758a": 1,
+      "45796ae7-6ac2-55a9-a8ec-d575b3283746": 1,
+      "baa0154e-9b3d-5641-a9fe-f2150a0ffa17": 1,
+      "71db2bb2-e235-5c43-a286-525226fbec7c": 2,
+      "bfa42817-aa33-5c23-9e83-915f79ae983d": 2,
+      "966d083b-f5b3-5217-830e-795264d3de2d": 1,
+      "0b46e92e-4530-5df9-99e2-da5b1c7dc11f": 1,
+      "226cc727-0266-59f1-b236-96b44e6631b5": 1,
+      "7302c949-71fb-59ab-a240-18f7e4b75622": 1,
+      "f1482bf5-cd8c-574a-a4b9-bf5f4c305d9e": 2,
+      "ff03bb93-0810-54db-8b3a-2fdb1becd518": 1
+    }
+  },
+  {
+    "id": "profile_19",
+    "query": "Junior full-stack Next.js Python FastAPI Postgres Hyderabad",
+    "target_track": "fullstack",
+    "skills": [
+      "typescript",
+      "react",
+      "fastapi",
+      "python",
+      "postgresql",
+      "docker"
+    ],
+    "interests": [
+      "fullstack",
+      "typescript",
+      "react"
+    ],
+    "location_pref": "Hyderabad",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 50000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "03a580c6-314b-53d6-b3ec-57a155e4891c": 1,
+      "e0f7df69-a68f-5511-88ae-ea3600b9e1bf": 1,
+      "d6d089c9-36c9-5fdc-9078-11ae9619e2e2": 1,
+      "18cad28e-3e9c-5065-9a3b-0c56bcbea21b": 1,
+      "adaae501-41ae-5c86-9dbc-ff2724b30de7": 1,
+      "baa0154e-9b3d-5641-a9fe-f2150a0ffa17": 1,
+      "ec510d35-01dc-5f55-8ede-deca7cb2a13e": 2,
+      "71db2bb2-e235-5c43-a286-525226fbec7c": 1,
+      "bfa42817-aa33-5c23-9e83-915f79ae983d": 1,
+      "565d10aa-6be4-5f36-a973-21bb9877b040": 1,
+      "226cc727-0266-59f1-b236-96b44e6631b5": 1,
+      "7302c949-71fb-59ab-a240-18f7e4b75622": 1,
+      "ff03bb93-0810-54db-8b3a-2fdb1becd518": 2,
+      "3a8e267e-57d4-5c06-a872-f1bb85551aef": 2,
+      "b52ed7a5-4f64-5b82-ab9d-607708a0de82": 1,
+      "23e43c27-5094-5cb3-bee0-1a017d344864": 1
+    }
+  },
+  {
+    "id": "profile_20",
+    "query": "MERN full-stack React Node Express MongoDB Gurugram",
+    "target_track": "fullstack",
+    "skills": [
+      "javascript",
+      "node.js",
+      "express.js",
+      "mongodb",
+      "react",
+      "redux"
+    ],
+    "interests": [
+      "fullstack",
+      "javascript",
+      "node.js"
+    ],
+    "location_pref": "Gurugram",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 48000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "03a580c6-314b-53d6-b3ec-57a155e4891c": 2,
+      "e0f7df69-a68f-5511-88ae-ea3600b9e1bf": 1,
+      "d6d089c9-36c9-5fdc-9078-11ae9619e2e2": 1,
+      "18cad28e-3e9c-5065-9a3b-0c56bcbea21b": 1,
+      "baa0154e-9b3d-5641-a9fe-f2150a0ffa17": 1,
+      "71db2bb2-e235-5c43-a286-525226fbec7c": 1,
+      "bfa42817-aa33-5c23-9e83-915f79ae983d": 1,
+      "226cc727-0266-59f1-b236-96b44e6631b5": 1,
+      "6ac1f6fc-b2b5-58ee-9ac8-064d187b4dfb": 1,
+      "7302c949-71fb-59ab-a240-18f7e4b75622": 2,
+      "ff03bb93-0810-54db-8b3a-2fdb1becd518": 1
+    }
+  },
+  {
+    "id": "profile_21",
+    "query": "Remote full-stack engineering intern React Node.js",
+    "target_track": "fullstack",
+    "skills": [
+      "react",
+      "javascript",
+      "node.js",
+      "git"
+    ],
+    "interests": [
+      "fullstack",
+      "react",
+      "javascript"
+    ],
+    "location_pref": "Remote",
+    "remote_only": true,
+    "remote_ok": true,
+    "salary_min": 20000,
+    "experience_level": "intern",
+    "relevant_jobs": {
+      "03a580c6-314b-53d6-b3ec-57a155e4891c": 1,
+      "e0f7df69-a68f-5511-88ae-ea3600b9e1bf": 1,
+      "d6d089c9-36c9-5fdc-9078-11ae9619e2e2": 1,
+      "18cad28e-3e9c-5065-9a3b-0c56bcbea21b": 1,
+      "baa0154e-9b3d-5641-a9fe-f2150a0ffa17": 1,
+      "71db2bb2-e235-5c43-a286-525226fbec7c": 1,
+      "bfa42817-aa33-5c23-9e83-915f79ae983d": 1,
+      "226cc727-0266-59f1-b236-96b44e6631b5": 1,
+      "65685efb-4248-50b8-b424-ab2e4f4f74ef": 1,
+      "7302c949-71fb-59ab-a240-18f7e4b75622": 1,
+      "ff03bb93-0810-54db-8b3a-2fdb1becd518": 1,
+      "50501deb-e581-5063-a697-bf9925e7e020": 1
+    }
+  },
+  {
+    "id": "profile_22",
+    "query": "Junior mobile web engineer React Native TypeScript Bengaluru",
+    "target_track": "fullstack",
+    "skills": [
+      "typescript",
+      "react native",
+      "rest api",
+      "git",
+      "agile"
+    ],
+    "interests": [
+      "fullstack",
+      "typescript",
+      "react native"
+    ],
+    "location_pref": "Bengaluru",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 55000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "5e79ce07-819a-591f-bf16-54a66cbc5926": 2,
+      "03a580c6-314b-53d6-b3ec-57a155e4891c": 1,
+      "e0f7df69-a68f-5511-88ae-ea3600b9e1bf": 1,
+      "d6d089c9-36c9-5fdc-9078-11ae9619e2e2": 1,
+      "18cad28e-3e9c-5065-9a3b-0c56bcbea21b": 1,
+      "4add4fa4-c6f3-5523-a51c-b49f8133e3d0": 1,
+      "baa0154e-9b3d-5641-a9fe-f2150a0ffa17": 1,
+      "71db2bb2-e235-5c43-a286-525226fbec7c": 1,
+      "bfa42817-aa33-5c23-9e83-915f79ae983d": 1,
+      "226cc727-0266-59f1-b236-96b44e6631b5": 1,
+      "35113485-ad97-5e28-96a6-48282e2acdd8": 1,
+      "7302c949-71fb-59ab-a240-18f7e4b75622": 1,
+      "166769c9-3c9a-5b14-b18f-939093e1bed0": 1,
+      "ff03bb93-0810-54db-8b3a-2fdb1becd518": 1
+    }
+  },
+  {
+    "id": "profile_23",
+    "query": "SDE-1 software development engineer DSA OOP fresher Chennai",
+    "target_track": "fullstack",
+    "skills": [
+      "python",
+      "javascript",
+      "sql",
+      "data structures & algorithms",
+      "oop",
+      "git"
+    ],
+    "interests": [
+      "fullstack",
+      "python",
+      "javascript"
+    ],
+    "location_pref": "Chennai",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 45000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "03a580c6-314b-53d6-b3ec-57a155e4891c": 1,
+      "e0f7df69-a68f-5511-88ae-ea3600b9e1bf": 1,
+      "d6d089c9-36c9-5fdc-9078-11ae9619e2e2": 2,
+      "18cad28e-3e9c-5065-9a3b-0c56bcbea21b": 1,
+      "baa0154e-9b3d-5641-a9fe-f2150a0ffa17": 2,
+      "71db2bb2-e235-5c43-a286-525226fbec7c": 1,
+      "bfa42817-aa33-5c23-9e83-915f79ae983d": 1,
+      "226cc727-0266-59f1-b236-96b44e6631b5": 1,
+      "844e0b5e-aec7-5e4d-9ed2-559dbedd2bd8": 1,
+      "a25a6451-1965-51de-b70f-e9b21eb59a7c": 2,
+      "ff8782e8-f0bb-55aa-b8f3-d586d5efe477": 2,
+      "7302c949-71fb-59ab-a240-18f7e4b75622": 1,
+      "a70f65ec-f7c0-54b0-801e-14e098d9fcf6": 2,
+      "3cc77f2e-6d1b-578d-935a-25f0ca3ada8d": 2,
+      "c9982806-cf33-5746-a88f-2895b8fa21f4": 1,
+      "ff03bb93-0810-54db-8b3a-2fdb1becd518": 1
+    }
+  },
+  {
+    "id": "profile_24",
+    "query": "Associate software engineer TypeScript React remote",
+    "target_track": "fullstack",
+    "skills": [
+      "typescript",
+      "react",
+      "next.js",
+      "postgresql"
+    ],
+    "interests": [
+      "fullstack",
+      "typescript",
+      "react"
+    ],
+    "location_pref": "Remote",
+    "remote_only": true,
+    "remote_ok": true,
+    "salary_min": 50000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "03a580c6-314b-53d6-b3ec-57a155e4891c": 1,
+      "e0f7df69-a68f-5511-88ae-ea3600b9e1bf": 1,
+      "d6d089c9-36c9-5fdc-9078-11ae9619e2e2": 1,
+      "18cad28e-3e9c-5065-9a3b-0c56bcbea21b": 1,
+      "baa0154e-9b3d-5641-a9fe-f2150a0ffa17": 1,
+      "71db2bb2-e235-5c43-a286-525226fbec7c": 1,
+      "bfa42817-aa33-5c23-9e83-915f79ae983d": 1,
+      "226cc727-0266-59f1-b236-96b44e6631b5": 1,
+      "7302c949-71fb-59ab-a240-18f7e4b75622": 1,
+      "ff03bb93-0810-54db-8b3a-2fdb1becd518": 1
+    }
+  },
+  {
+    "id": "profile_25",
+    "query": "Junior data analyst SQL Python pandas Power BI Bengaluru",
+    "target_track": "data",
+    "skills": [
+      "sql",
+      "python",
+      "pandas",
+      "excel",
+      "power bi",
+      "statistics"
+    ],
+    "interests": [
+      "data",
+      "sql",
+      "python"
+    ],
+    "location_pref": "Bengaluru",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 40000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "640ad0e0-1b0c-5a3a-9416-b3a1c43a35de": 1,
+      "448886e7-d6a1-5aed-ac33-64f001abfabf": 2,
+      "27c19fb4-1007-5836-9fd7-f0e2ad60d975": 1,
+      "853139a0-db1c-5b44-88f7-8e42ef9ded87": 2,
+      "b08f2aaa-0fab-5d11-accc-8553b4a45a4c": 1,
+      "5e0a73ef-eaf4-56aa-a739-781293a8450e": 1,
+      "afbe0b06-e7a7-5302-9825-6ee251214c3b": 2,
+      "21d59300-e860-55ea-9099-1d67882dd8aa": 1,
+      "ead4bd53-fdcc-5370-a80b-fbaf2f7514d8": 1
+    }
+  },
+  {
+    "id": "profile_26",
+    "query": "Product data analyst SQL Tableau A/B testing Gurugram",
+    "target_track": "data",
+    "skills": [
+      "sql",
+      "python",
+      "tableau",
+      "a/b testing",
+      "product analytics"
+    ],
+    "interests": [
+      "data",
+      "sql",
+      "python"
+    ],
+    "location_pref": "Gurugram",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 45000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "640ad0e0-1b0c-5a3a-9416-b3a1c43a35de": 2,
+      "448886e7-d6a1-5aed-ac33-64f001abfabf": 1,
+      "da68358d-96f1-5bb1-b96a-8ee8f7ec5b9f": 1,
+      "27c19fb4-1007-5836-9fd7-f0e2ad60d975": 1,
+      "b08f2aaa-0fab-5d11-accc-8553b4a45a4c": 1,
+      "9a625b27-ab08-5d2d-a299-0ab1960e1ee6": 1,
+      "e94f1b28-9df7-52d8-8716-6fd23042487e": 2,
+      "5e0a73ef-eaf4-56aa-a739-781293a8450e": 2,
+      "afbe0b06-e7a7-5302-9825-6ee251214c3b": 1,
+      "ead4bd53-fdcc-5370-a80b-fbaf2f7514d8": 1
+    }
+  },
+  {
+    "id": "profile_27",
+    "query": "Junior data engineer Python Spark Airflow ETL Hyderabad",
+    "target_track": "data",
+    "skills": [
+      "python",
+      "sql",
+      "apache spark",
+      "etl",
+      "postgresql",
+      "apache airflow"
+    ],
+    "interests": [
+      "data",
+      "python",
+      "sql"
+    ],
+    "location_pref": "Hyderabad",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 45000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "640ad0e0-1b0c-5a3a-9416-b3a1c43a35de": 1,
+      "448886e7-d6a1-5aed-ac33-64f001abfabf": 1,
+      "489fb2c2-90c2-5855-b314-82672308bc81": 1,
+      "27c19fb4-1007-5836-9fd7-f0e2ad60d975": 2,
+      "9b3cac74-a120-5683-a193-30cb0fa225ec": 1,
+      "b90ef80e-0bad-5010-bc72-c6c327ae0ec9": 1,
+      "b08f2aaa-0fab-5d11-accc-8553b4a45a4c": 2,
+      "e9762308-65c7-5b28-991c-5816ecacc7f0": 1,
+      "5e0a73ef-eaf4-56aa-a739-781293a8450e": 1,
+      "afbe0b06-e7a7-5302-9825-6ee251214c3b": 1,
+      "c8782ae9-d2a5-5f66-bc26-a9235881ccb8": 2,
+      "143e7522-403f-5ff2-86cf-27d1c5d49c50": 2,
+      "ead4bd53-fdcc-5370-a80b-fbaf2f7514d8": 1,
+      "9a4171bd-5e9b-58c3-9c9a-a10f38361e6c": 1
+    }
+  },
+  {
+    "id": "profile_28",
+    "query": "Analytics engineer dbt Snowflake SQL data modeling remote",
+    "target_track": "data",
+    "skills": [
+      "sql",
+      "dbt",
+      "snowflake",
+      "data modeling",
+      "git",
+      "python"
+    ],
+    "interests": [
+      "data",
+      "sql",
+      "dbt"
+    ],
+    "location_pref": "Remote",
+    "remote_only": true,
+    "remote_ok": true,
+    "salary_min": 45000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "640ad0e0-1b0c-5a3a-9416-b3a1c43a35de": 1,
+      "448886e7-d6a1-5aed-ac33-64f001abfabf": 1,
+      "27c19fb4-1007-5836-9fd7-f0e2ad60d975": 1,
+      "b08f2aaa-0fab-5d11-accc-8553b4a45a4c": 1,
+      "5e0a73ef-eaf4-56aa-a739-781293a8450e": 1,
+      "afbe0b06-e7a7-5302-9825-6ee251214c3b": 1,
+      "ead4bd53-fdcc-5370-a80b-fbaf2f7514d8": 2
+    }
+  },
+  {
+    "id": "profile_29",
+    "query": "Data science intern Python pandas scikit-learn Bengaluru",
+    "target_track": "data",
+    "skills": [
+      "python",
+      "pandas",
+      "numpy",
+      "scikit-learn",
+      "sql"
+    ],
+    "interests": [
+      "data",
+      "python",
+      "pandas"
+    ],
+    "location_pref": "Bengaluru",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 20000,
+    "experience_level": "intern",
+    "relevant_jobs": {
+      "640ad0e0-1b0c-5a3a-9416-b3a1c43a35de": 1,
+      "448886e7-d6a1-5aed-ac33-64f001abfabf": 1,
+      "71e7205c-c60d-59eb-b481-565ccfd2957e": 1,
+      "27c19fb4-1007-5836-9fd7-f0e2ad60d975": 1,
+      "853139a0-db1c-5b44-88f7-8e42ef9ded87": 1,
+      "b08f2aaa-0fab-5d11-accc-8553b4a45a4c": 1,
+      "7aef6281-fd3b-5e33-9f4e-2979c895fc4b": 1,
+      "5e0a73ef-eaf4-56aa-a739-781293a8450e": 1,
+      "afbe0b06-e7a7-5302-9825-6ee251214c3b": 1,
+      "fd4c38dd-796c-5169-9cb5-e505e15c3f0e": 1,
+      "21d59300-e860-55ea-9099-1d67882dd8aa": 1,
+      "ead4bd53-fdcc-5370-a80b-fbaf2f7514d8": 1
+    }
+  },
+  {
+    "id": "profile_30",
+    "query": "Associate business intelligence analyst Power BI SQL Pune",
+    "target_track": "data",
+    "skills": [
+      "sql",
+      "power bi",
+      "excel",
+      "statistics",
+      "python"
+    ],
+    "interests": [
+      "data",
+      "sql",
+      "power bi"
+    ],
+    "location_pref": "Pune",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 40000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "640ad0e0-1b0c-5a3a-9416-b3a1c43a35de": 1,
+      "011452b6-a130-5b32-ba3e-455fd9ff7bb1": 1,
+      "d749b7be-2054-5f5a-9355-7b901c54b046": 2,
+      "448886e7-d6a1-5aed-ac33-64f001abfabf": 1,
+      "27c19fb4-1007-5836-9fd7-f0e2ad60d975": 1,
+      "b08f2aaa-0fab-5d11-accc-8553b4a45a4c": 1,
+      "04326200-543f-5019-8c66-48106ad0bc9b": 1,
+      "58f05af4-6544-5538-9cd7-092445cac0df": 1,
+      "5e0a73ef-eaf4-56aa-a739-781293a8450e": 1,
+      "afbe0b06-e7a7-5302-9825-6ee251214c3b": 2,
+      "ead4bd53-fdcc-5370-a80b-fbaf2f7514d8": 1
+    }
+  },
+  {
+    "id": "profile_31",
+    "query": "Junior data analyst machine learning XGBoost Mumbai",
+    "target_track": "data",
+    "skills": [
+      "python",
+      "pandas",
+      "xgboost",
+      "scikit-learn",
+      "sql"
+    ],
+    "interests": [
+      "data",
+      "python",
+      "pandas"
+    ],
+    "location_pref": "Mumbai",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 45000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "640ad0e0-1b0c-5a3a-9416-b3a1c43a35de": 1,
+      "7e4c9380-ec7b-5b08-8f8f-e9b3a98764f3": 2,
+      "448886e7-d6a1-5aed-ac33-64f001abfabf": 2,
+      "4c2fbae1-fe46-5de8-99de-5e2a85cff627": 2,
+      "27c19fb4-1007-5836-9fd7-f0e2ad60d975": 1,
+      "71d19cc7-d269-5198-8b27-e9965d54385a": 1,
+      "b08f2aaa-0fab-5d11-accc-8553b4a45a4c": 1,
+      "5e0a73ef-eaf4-56aa-a739-781293a8450e": 1,
+      "afbe0b06-e7a7-5302-9825-6ee251214c3b": 1,
+      "b4daa25f-c942-5cdc-a039-f4b6b55391d2": 1,
+      "ead4bd53-fdcc-5370-a80b-fbaf2f7514d8": 1
+    }
+  },
+  {
+    "id": "profile_32",
+    "query": "Junior cybersecurity SOC analyst SIEM Linux Bengaluru",
+    "target_track": "cybersecurity",
+    "skills": [
+      "network security",
+      "linux",
+      "siem",
+      "soc operations",
+      "threat modeling"
+    ],
+    "interests": [
+      "cybersecurity",
+      "network security",
+      "linux"
+    ],
+    "location_pref": "Bengaluru",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 40000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "dd771b83-7603-57f8-8c71-edf82903124d": 1,
+      "0462f402-bf7f-5fae-8be4-c29f10de50ac": 1,
+      "b247ef86-1d1e-553e-82fb-2be5a7861d34": 1,
+      "6c84aaa3-1d05-5a4a-b1bd-f4ce9291b0d4": 2,
+      "3954f87c-8180-550d-8142-9f8df2c8a21f": 1,
+      "67a82180-4393-57de-a8de-838a24d28f24": 1,
+      "f351c096-dfb8-5d17-a8d0-3e9ce6dd20ee": 1,
+      "681c5c0f-6062-53f5-9548-aca25ceb0439": 2,
+      "bc8ea58b-ae0c-59e3-9c93-c96b2cc04016": 1,
+      "8400ac22-b104-577c-a866-d333dbdaa561": 1
+    }
+  },
+  {
+    "id": "profile_33",
+    "query": "Application security AppSec intern OWASP Burp Suite Pune",
+    "target_track": "cybersecurity",
+    "skills": [
+      "owasp",
+      "burp suite",
+      "penetration testing",
+      "python",
+      "rest api"
+    ],
+    "interests": [
+      "cybersecurity",
+      "owasp",
+      "burp suite"
+    ],
+    "location_pref": "Pune",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 18000,
+    "experience_level": "intern",
+    "relevant_jobs": {
+      "0462f402-bf7f-5fae-8be4-c29f10de50ac": 1,
+      "22a594e6-69bc-5744-931e-22359d98b929": 1,
+      "e11c232b-36f5-5ed6-8c1a-1abe5bc8e3b7": 1,
+      "7f20b970-b745-5b02-a2c2-f633686b574c": 2,
+      "4f1d5acc-cb1c-5a15-bafb-ddb2d4f28bce": 1,
+      "8c5462f0-f352-5636-8a59-2007065881d9": 1,
+      "17f0c45d-320d-5007-9e0e-14d4dc49ca14": 1,
+      "d29d8a4c-ff65-5bc9-842b-8f5145cb9ce8": 1
+    }
+  },
+  {
+    "id": "profile_34",
+    "query": "Associate VAPT penetration testing engineer Nmap Linux Hyderabad",
+    "target_track": "cybersecurity",
+    "skills": [
+      "vulnerability management",
+      "nmap",
+      "linux",
+      "bash",
+      "cryptography"
+    ],
+    "interests": [
+      "cybersecurity",
+      "vulnerability management",
+      "nmap"
+    ],
+    "location_pref": "Hyderabad",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 40000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "dd771b83-7603-57f8-8c71-edf82903124d": 1,
+      "0462f402-bf7f-5fae-8be4-c29f10de50ac": 1,
+      "6c84aaa3-1d05-5a4a-b1bd-f4ce9291b0d4": 2,
+      "65fed633-d9ca-5513-a11f-17e1f19c40b1": 1,
+      "3954f87c-8180-550d-8142-9f8df2c8a21f": 2,
+      "681c5c0f-6062-53f5-9548-aca25ceb0439": 1,
+      "bc8ea58b-ae0c-59e3-9c93-c96b2cc04016": 2,
+      "8400ac22-b104-577c-a866-d333dbdaa561": 1
+    }
+  },
+  {
+    "id": "profile_35",
+    "query": "Junior cloud security analyst AWS IAM DevSecOps remote",
+    "target_track": "cybersecurity",
+    "skills": [
+      "cloud security",
+      "aws",
+      "iam",
+      "docker",
+      "linux",
+      "python"
+    ],
+    "interests": [
+      "cybersecurity",
+      "cloud security",
+      "aws"
+    ],
+    "location_pref": "Remote",
+    "remote_only": true,
+    "remote_ok": true,
+    "salary_min": 45000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "dd771b83-7603-57f8-8c71-edf82903124d": 1,
+      "0462f402-bf7f-5fae-8be4-c29f10de50ac": 2,
+      "6c84aaa3-1d05-5a4a-b1bd-f4ce9291b0d4": 1,
+      "3954f87c-8180-550d-8142-9f8df2c8a21f": 1,
+      "681c5c0f-6062-53f5-9548-aca25ceb0439": 1,
+      "bc8ea58b-ae0c-59e3-9c93-c96b2cc04016": 1,
+      "8400ac22-b104-577c-a866-d333dbdaa561": 1
+    }
+  },
+  {
+    "id": "profile_36",
+    "query": "Security operations engineer SIEM incident response Gurugram",
+    "target_track": "cybersecurity",
+    "skills": [
+      "siem",
+      "soc operations",
+      "network security",
+      "linux"
+    ],
+    "interests": [
+      "cybersecurity",
+      "siem",
+      "soc operations"
+    ],
+    "location_pref": "Gurugram",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 40000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "dd771b83-7603-57f8-8c71-edf82903124d": 1,
+      "dbd59928-f77f-552e-98a1-10f9d2f77994": 1,
+      "0462f402-bf7f-5fae-8be4-c29f10de50ac": 1,
+      "6c84aaa3-1d05-5a4a-b1bd-f4ce9291b0d4": 2,
+      "3954f87c-8180-550d-8142-9f8df2c8a21f": 1,
+      "0d85a395-662c-542d-afab-21340b5d2277": 1,
+      "9a173def-df08-54f1-a196-d7e89ac58cb6": 1,
+      "1ddff012-a0f1-57b0-82c8-33aff3740bdc": 1,
+      "681c5c0f-6062-53f5-9548-aca25ceb0439": 2,
+      "bc8ea58b-ae0c-59e3-9c93-c96b2cc04016": 1,
+      "8400ac22-b104-577c-a866-d333dbdaa561": 1
+    }
+  },
+  {
+    "id": "profile_37",
+    "query": "Junior AppSec VAPT security engineer Chennai",
+    "target_track": "cybersecurity",
+    "skills": [
+      "owasp",
+      "burp suite",
+      "python",
+      "vulnerability management"
+    ],
+    "interests": [
+      "cybersecurity",
+      "owasp",
+      "burp suite"
+    ],
+    "location_pref": "Chennai",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 40000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "dd771b83-7603-57f8-8c71-edf82903124d": 1,
+      "0462f402-bf7f-5fae-8be4-c29f10de50ac": 1,
+      "9c4485e5-ae2d-54f2-bbc9-ae3c3655fe7d": 1,
+      "fee144d4-fd9d-5ff4-b772-9b5c09fafedf": 1,
+      "6c84aaa3-1d05-5a4a-b1bd-f4ce9291b0d4": 1,
+      "3954f87c-8180-550d-8142-9f8df2c8a21f": 1,
+      "48c31600-4a7f-5f71-9089-4673ec9c3eb2": 1,
+      "681c5c0f-6062-53f5-9548-aca25ceb0439": 1,
+      "86d5d901-2167-55a1-a6d7-35b15ada52c1": 1,
+      "bc8ea58b-ae0c-59e3-9c93-c96b2cc04016": 1,
+      "8400ac22-b104-577c-a866-d333dbdaa561": 1
+    }
+  },
+  {
+    "id": "profile_38",
+    "query": "Junior QA automation engineer Playwright Python pytest Bengaluru",
+    "target_track": "qa",
+    "skills": [
+      "python",
+      "pytest",
+      "playwright",
+      "postman",
+      "sql",
+      "git"
+    ],
+    "interests": [
+      "qa",
+      "python",
+      "pytest"
+    ],
+    "location_pref": "Bengaluru",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 38000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "24d947eb-6931-5929-89fd-9b8f72097a25": 2,
+      "e97cd25b-892e-517c-8551-e75cbae652f0": 1,
+      "87d30864-d8c6-5927-ac27-b7053978d06d": 2,
+      "f6265274-1d4d-5ff0-a854-b2f060663fd3": 1,
+      "2c5ab3fa-b2b1-5c5e-ad63-cb0647d5ae61": 1,
+      "5efcb6b9-4260-5a27-bcb3-00945811b79c": 2
+    }
+  },
+  {
+    "id": "profile_39",
+    "query": "Software test engineer Selenium Java JUnit Pune",
+    "target_track": "qa",
+    "skills": [
+      "java",
+      "selenium",
+      "junit",
+      "test automation",
+      "rest api",
+      "ci/cd"
+    ],
+    "interests": [
+      "qa",
+      "java",
+      "selenium"
+    ],
+    "location_pref": "Pune",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 38000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "f6b45425-d554-52b4-a70f-a8a063a972ba": 1,
+      "87d30864-d8c6-5927-ac27-b7053978d06d": 1,
+      "f6265274-1d4d-5ff0-a854-b2f060663fd3": 2,
+      "43858c98-b919-57b4-9066-ff6392da8666": 2,
+      "2c5ab3fa-b2b1-5c5e-ad63-cb0647d5ae61": 1,
+      "27e4f41c-83ed-56dd-852a-e484b9e9a124": 2
+    }
+  },
+  {
+    "id": "profile_40",
+    "query": "Associate SDET Playwright Cypress automation Hyderabad",
+    "target_track": "qa",
+    "skills": [
+      "typescript",
+      "playwright",
+      "cypress",
+      "manual testing",
+      "postman"
+    ],
+    "interests": [
+      "qa",
+      "typescript",
+      "playwright"
+    ],
+    "location_pref": "Hyderabad",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 40000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "84c92e27-227e-5706-ba06-bd0e52a555e6": 1,
+      "87d30864-d8c6-5927-ac27-b7053978d06d": 1,
+      "f6265274-1d4d-5ff0-a854-b2f060663fd3": 1,
+      "2c5ab3fa-b2b1-5c5e-ad63-cb0647d5ae61": 2,
+      "4a7b701d-f946-594f-969a-a8d098b0ee79": 1,
+      "217a49a6-f64e-5fdd-bec2-8224ea1e66ba": 2
+    }
+  },
+  {
+    "id": "profile_41",
+    "query": "QA engineering intern API web testing remote",
+    "target_track": "qa",
+    "skills": [
+      "manual testing",
+      "postman",
+      "sql",
+      "pytest",
+      "git"
+    ],
+    "interests": [
+      "qa",
+      "manual testing",
+      "postman"
+    ],
+    "location_pref": "Remote",
+    "remote_only": true,
+    "remote_ok": true,
+    "salary_min": 16000,
+    "experience_level": "intern",
+    "relevant_jobs": {
+      "f589ba00-b89e-5566-b0c1-c326b791c893": 2,
+      "87d30864-d8c6-5927-ac27-b7053978d06d": 1,
+      "2c5ab3fa-b2b1-5c5e-ad63-cb0647d5ae61": 1
+    }
+  },
+  {
+    "id": "profile_42",
+    "query": "Junior performance QA analyst JMeter Postman SQL Gurugram",
+    "target_track": "qa",
+    "skills": [
+      "manual testing",
+      "postman",
+      "sql",
+      "jmeter",
+      "test automation"
+    ],
+    "interests": [
+      "qa",
+      "manual testing",
+      "postman"
+    ],
+    "location_pref": "Gurugram",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 38000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "6da1a57e-f98e-50a5-9b25-dae5bbb2fe4f": 1,
+      "4901cd3e-7aa9-5b5e-88d7-b7b97635298f": 2,
+      "87d30864-d8c6-5927-ac27-b7053978d06d": 1,
+      "34af1186-c9df-546e-b571-fad4aa5753c9": 1,
+      "f6265274-1d4d-5ff0-a854-b2f060663fd3": 1,
+      "2c5ab3fa-b2b1-5c5e-ad63-cb0647d5ae61": 1
+    }
+  },
+  {
+    "id": "profile_43",
+    "query": "QA automation SDET fresher Noida",
+    "target_track": "qa",
+    "skills": [
+      "selenium",
+      "java",
+      "test automation",
+      "postman"
+    ],
+    "interests": [
+      "qa",
+      "selenium",
+      "java"
+    ],
+    "location_pref": "Noida",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 35000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "2c8269be-3801-5099-aced-5046088c6dde": 1,
+      "87d30864-d8c6-5927-ac27-b7053978d06d": 1,
+      "d31295bd-3a0a-5062-9c6d-edbf0b5cb212": 1,
+      "f6265274-1d4d-5ff0-a854-b2f060663fd3": 1,
+      "2c5ab3fa-b2b1-5c5e-ad63-cb0647d5ae61": 1
+    }
+  },
+  {
+    "id": "profile_44",
+    "query": "Associate product manager APM PRD SQL Figma Bengaluru",
+    "target_track": "product",
+    "skills": [
+      "product strategy",
+      "prd writing",
+      "user research",
+      "sql",
+      "product analytics",
+      "figma"
+    ],
+    "interests": [
+      "product",
+      "product strategy",
+      "prd writing"
+    ],
+    "location_pref": "Bengaluru",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 50000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "54127051-5959-564d-9f88-2b35f0bbde58": 1,
+      "aa82a927-8805-52fa-9eba-868bee515566": 2,
+      "dd6b86bd-ee59-5b22-aa87-d483acdaaa7c": 2,
+      "6092af52-cb27-5b42-a3d9-2b3f0b588856": 1,
+      "6a027dc7-84c7-504d-b6a3-abb898f24aa9": 2
+    }
+  },
+  {
+    "id": "profile_45",
+    "query": "Product management intern A/B testing analytics Gurugram",
+    "target_track": "product",
+    "skills": [
+      "prd writing",
+      "a/b testing",
+      "product analytics",
+      "sql",
+      "excel"
+    ],
+    "interests": [
+      "product",
+      "prd writing",
+      "a/b testing"
+    ],
+    "location_pref": "Gurugram",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 20000,
+    "experience_level": "intern",
+    "relevant_jobs": {
+      "ea79d7d8-e688-5921-abde-7b1ba638d07d": 1,
+      "f1deff71-558b-5645-afdc-66f7adf5a799": 2,
+      "db1f98c0-4d33-5dab-a24e-a612cc4dd74e": 1,
+      "aa82a927-8805-52fa-9eba-868bee515566": 1,
+      "22d960be-901c-512d-9ff5-ee65f3bfdc49": 2,
+      "3b66d791-5e09-5dff-8d57-02a2bc30f06d": 1,
+      "73760921-87bb-5b34-865a-629526b9404b": 1,
+      "dd6b86bd-ee59-5b22-aa87-d483acdaaa7c": 1,
+      "6092af52-cb27-5b42-a3d9-2b3f0b588856": 1,
+      "6a027dc7-84c7-504d-b6a3-abb898f24aa9": 1
+    }
+  },
+  {
+    "id": "profile_46",
+    "query": "Junior technical product manager remote India",
+    "target_track": "product",
+    "skills": [
+      "product strategy",
+      "prd writing",
+      "sql",
+      "agile",
+      "figma"
+    ],
+    "interests": [
+      "product",
+      "product strategy",
+      "prd writing"
+    ],
+    "location_pref": "Remote",
+    "remote_only": true,
+    "remote_ok": true,
+    "salary_min": 48000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "aa82a927-8805-52fa-9eba-868bee515566": 2,
+      "dd6b86bd-ee59-5b22-aa87-d483acdaaa7c": 2,
+      "6092af52-cb27-5b42-a3d9-2b3f0b588856": 1,
+      "6a027dc7-84c7-504d-b6a3-abb898f24aa9": 2
+    }
+  },
+  {
+    "id": "profile_47",
+    "query": "Product analyst APM trainee Mumbai",
+    "target_track": "product",
+    "skills": [
+      "product analytics",
+      "sql",
+      "a/b testing",
+      "prd writing"
+    ],
+    "interests": [
+      "product",
+      "product analytics",
+      "sql"
+    ],
+    "location_pref": "Mumbai",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 45000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "aa82a927-8805-52fa-9eba-868bee515566": 1,
+      "dd6b86bd-ee59-5b22-aa87-d483acdaaa7c": 1,
+      "4cd03d20-fc09-5b98-9dd3-e3c82570a341": 1,
+      "6092af52-cb27-5b42-a3d9-2b3f0b588856": 1,
+      "b8d2f652-b890-5752-96e6-0974ceb90d7f": 2,
+      "6a027dc7-84c7-504d-b6a3-abb898f24aa9": 1
+    }
+  },
+  {
+    "id": "profile_48",
+    "query": "Associate DevOps cloud engineer Docker Kubernetes Terraform AWS Bengaluru",
+    "target_track": "devops",
+    "skills": [
+      "docker",
+      "kubernetes",
+      "terraform",
+      "aws",
+      "prometheus",
+      "python"
+    ],
+    "interests": [
+      "devops",
+      "docker",
+      "kubernetes"
+    ],
+    "location_pref": "Bengaluru",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 50000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "0f368e92-2269-5e00-8a17-5be5d22d703a": 1,
+      "dbe60327-bc83-5f38-b944-1a529d548f8c": 2,
+      "e5b44ae4-a523-511d-a614-75d12c41f76a": 1
+    }
+  },
+  {
+    "id": "profile_49",
+    "query": "Cloud infrastructure intern AWS Docker CI/CD remote",
+    "target_track": "devops",
+    "skills": [
+      "docker",
+      "linux",
+      "aws",
+      "ci/cd",
+      "git",
+      "bash"
+    ],
+    "interests": [
+      "devops",
+      "docker",
+      "linux"
+    ],
+    "location_pref": "Remote",
+    "remote_only": true,
+    "remote_ok": true,
+    "salary_min": 20000,
+    "experience_level": "intern",
+    "relevant_jobs": {
+      "e5b44ae4-a523-511d-a614-75d12c41f76a": 1
+    }
+  },
+  {
+    "id": "profile_50",
+    "query": "DevOps cloud engineer fresher AWS Docker Linux Pune",
+    "target_track": "devops",
+    "skills": [
+      "docker",
+      "linux",
+      "aws",
+      "terraform",
+      "ci/cd"
+    ],
+    "interests": [
+      "devops",
+      "docker",
+      "linux"
+    ],
+    "location_pref": "Pune",
+    "remote_only": false,
+    "remote_ok": true,
+    "salary_min": 45000,
+    "experience_level": "fresher",
+    "relevant_jobs": {
+      "f6f94e1d-9c7b-567f-8ff6-e6d7b8f3a0c0": 1,
+      "e5b44ae4-a523-511d-a614-75d12c41f76a": 2
+    }
+  }
+]

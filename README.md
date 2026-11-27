@@ -1,55 +1,143 @@
 # Compass
 
-> *Find your true north in your career.*
+> **Find your true north in your career.**
 
-**Compass** is an end-to-end conversational AI career mentor for freshers and interns in India. Built from scratch without agent frameworks, Compass combines hybrid PostgreSQL retrieval (`pgvector` HNSW + full-text search with Reciprocal Rank Fusion), deterministic skill-gap analysis, a hand-written Claude tool-use agent loop, cross-session memory, and RAG-grounded learning roadmaps.
+Compass is a conversational career mentor for freshers and interns in India. It combines grounded job search, skill-gap analysis, persistent preferences, and citation-backed career roadmaps in a single web app.
 
-## Current Progress
+## Project status
 
-- [x] **Stage 1:** FastAPI async scaffold, structured JSON logging with request IDs, rate limiting, SQLAlchemy 2 + Alembic Postgres/pgvector schema (`docs/schema.md`), multi-stage `Dockerfile` + `docker-compose.yml`, and `GET /health`.
-- [x] **Stage 2:** 320 sample India fresher/intern jobs (`data/jobs_seed.json`), deterministic 150-skill regex extractor, local `fastembed` embeddings (`BAAI/bge-small-en-v1.5`, 384 dims) with LRU cache, incremental live ingestion (`scripts/ingest_jobs.py` via Remotive/Arbeitnow), and 8 curated career guides (`data/kb/*.md`) chunked to ~300 tokens for RAG.
-- [x] **Stage 3:** Hybrid search (`pgvector` HNSW cosine + Postgres FTS merged via RRF `k=60` with SQL hard filters), weighted reranking (`0.5*semantic + 0.25*skill_overlap + 0.15*preference_fit + 0.1*freshness` + interaction boosts/penalties), and pure SQL `skill_gap` analysis (`app/search/`).
-- [x] **Stage 4:** Hand-written tool-use agent loop (`app/agent/`, max 6 iterations, zero agent frameworks), 9 Pydantic-validated tools, retry-once output validation with safe fallback, strict `job_id` grounding, and JSON + SSE streaming `POST /chat`.
-- [x] **Stage 5:** Short-term rolling conversation summaries + post-turn long-term memory extractor (`app/services/memory.py`) with 384-dim cosine deduplication, conflict-aware updates (changed salary/city), and `GET/PATCH /profile` + `PATCH/DELETE /memories/{id}` endpoints.
-- [x] **Stage 6:** RAG-grounded `build_roadmap` with KB citations (`app/agent/roadmap.py`), `GET /jobs/{id}`, `POST /feedback`, `GET /roadmap/{user_id}`, and a 16-scenario scripted multi-turn conversation test suite (`tests/test_stage6_conversations.py`).
-- [x] **Stage 7:** Handcrafted Next.js (App Router) + TypeScript + Tailwind + Framer Motion UI (`frontend/`) with **Colourful**, **Midnight**, and **Mahogany** themes, compass-dial fit scores, N/E/S/W journey roadmaps, editable "Your Bearings" profile/memory panel, and verified desktop + mobile screenshots in `docs/screenshots/`.
-- [ ] **Stages 8–10:** Retrieval + generation evals (`evals/results.md`), GitHub Actions CI, Render + Neon deploy + smoke test, and final README polish.
+- [x] **Stages 1–7:** API and database, job data and embeddings, hybrid retrieval and ranking, grounded agent, memory, RAG roadmaps, and the Compass UI.
+- [x] **Stage 8:** 50-profile retrieval evaluation, 30-conversation generation evaluation, and GitHub Actions CI.
+- [ ] **Stage 9:** Render + Neon deployment and public-URL smoke test. [`render.yaml`](render.yaml) is ready; deploy credentials and a Neon database must be configured in Render.
+- [x] **Stage 10:** Documentation, evaluation results, screenshots, and interview prep.
 
-## Sample Data & Live Ingestion
+## Architecture
 
-- **Sample seed data (`data/jobs_seed.json`)**: Contains **320 synthetic sample postings** tailored to Indian freshers and interns across AI/ML, Backend, Full-Stack, Data, Cybersecurity, QA/SDET, DevOps, and APM roles in Bengaluru, Hyderabad, Pune, Gurugram, Mumbai, Chennai, Noida, and Remote. Companies and URLs (`sample-jobs.compass.local`) are clearly marked as sample data (`source='seed'`).
-- **Live public ingestion (`scripts/ingest_jobs.py`)**: Pulls live postings from Remotive (with Arbeitnow fallback), strips HTML, normalizes fields, computes `content_hash`, upserts into `jobs`, extracts skills via regex, and re-embeds only newly added or modified rows.
-- **Career knowledge base (`data/kb/*.md`)**: 8 curated India-fresher career guides chunked to ~300 tokens and embedded into `kb_chunks` for citation-grounded roadmaps.
-
-## Architecture (Stage 1 Foundation)
-
-- **API:** FastAPI (async) + `slowapi` rate limiting + structured JSON logs with `X-Request-ID`.
-- **Database:** PostgreSQL 16 + `pgvector` (`vector(384)` with HNSW cosine indexes + stored weighted `tsvector` GIN indexes). See [docs/schema.md](docs/schema.md).
-- **LLM:** Anthropic Claude (`CLAUDE_MODEL` configurable via env).
-- **Embeddings:** Local `BAAI/bge-small-en-v1.5` (384 dims) via `fastembed` — zero extra API keys.
-
-## Running Locally
-
-### With Docker Compose
-```bash
-cp .env.example .env
-# Add your ANTHROPIC_API_KEY in .env
-docker compose up --build
+```mermaid
+flowchart LR
+    U[User] --> UI[Next.js static UI]
+    UI --> API[FastAPI API]
+    API --> Agent[Hand-written tool-use agent]
+    Agent --> LLM[Anthropic / Groq / Gemini]
+    Agent --> Search[Hybrid retrieval and ranking]
+    Search --> DB[(PostgreSQL + pgvector)]
+    Agent --> Memory[Conversation and long-term memory]
+    Memory --> DB
+    Agent --> Roadmap[RAG career roadmaps]
+    Roadmap --> KB[Curated career guides]
+    Search --> Embed[Local fastembed model]
 ```
 
-The API will run migrations automatically and expose `GET http://localhost:8000/health`.
+The API serves the statically exported frontend from the same container. PostgreSQL stores profiles, jobs, embeddings, conversations, memories, feedback, and roadmap milestones. Search combines pgvector cosine similarity with PostgreSQL full-text search using Reciprocal Rank Fusion; ranking then considers skills, preferences, freshness, and user interactions. The agent uses validated tools rather than an agent framework and grounds job references in retrieved database records. See [`docs/schema.md`](docs/schema.md) for the schema.
 
-### Local Python Development
-```bash
+## Evaluation results
+
+Results are from [`evals/results.md`](evals/results.md): 50 labelled profiles evaluated against 320 seed jobs, plus 30 LLM-judged conversations.
+
+| Retrieval strategy | Recall@10 | nDCG@10 |
+| --- | ---: | ---: |
+| Vector-only | 0.7031 | 0.7038 |
+| Keyword-only | 0.7199 | 0.7382 |
+| Hybrid (RRF, k=60) | 0.7602 | 0.7570 |
+| **Hybrid + reranking** | **0.7586** | **0.8322** |
+
+Generation evaluation: **30/30** conversations scored, with no parse/API failures; mean groundedness **4.47/5**, relevance **4.53/5**, and actionability **4.53/5**. All **39/39** referenced job IDs existed in the evaluated job data. The generation scores use an LLM-as-judge and should be treated as evaluation signals, not independent human ratings.
+
+Run retrieval-only evaluation without an LLM key using `python -m evals.run --skip-llm`. Run both retrieval and generation evaluations with a configured LLM provider using `python -m evals.run`.
+
+## Features
+
+- **Jobs:** 320 clearly identified sample postings for Indian fresher and intern roles, plus incremental public-job ingestion from Remotive and Arbeitnow.
+- **Skill analysis:** deterministic skill extraction and SQL-based gap analysis.
+- **Search:** hard SQL filters, pgvector semantic search, Postgres full-text search, RRF merging, and weighted reranking.
+- **Career guidance:** a hand-written, bounded tool-use loop with structured validation, job-ID grounding, and JSON/SSE chat responses.
+- **Memory:** rolling conversation summaries and editable, deduplicated long-term preferences and facts.
+- **Roadmaps:** role-specific plans grounded in eight curated career guides with citations.
+- **UI:** Colourful, Midnight, and Mahogany themes, fit-score compass dials, journey roadmaps, streaming chat, and editable profile/memory controls.
+- **Operations:** FastAPI health endpoint, request IDs, structured JSON logs, rate limits, Docker, and Alembic migrations.
+
+The seeded postings are synthetic examples, not real vacancies. They use clearly marked sample URLs and should not be treated as live job listings.
+
+## Screenshots
+
+| Theme | Desktop | Mobile |
+| --- | --- | --- |
+| Colourful | ![Colourful desktop](docs/screenshots/colourful-desktop.png) | ![Colourful mobile](docs/screenshots/colourful-mobile.png) |
+| Midnight | ![Midnight desktop](docs/screenshots/midnight-desktop.png) | ![Midnight mobile](docs/screenshots/midnight-mobile.png) |
+| Mahogany | ![Mahogany desktop](docs/screenshots/mahogany-desktop.png) | ![Mahogany mobile](docs/screenshots/mahogany-mobile.png) |
+
+## Run locally
+
+### Docker Compose
+
+1. Copy `.env.example` to `.env`.
+2. Set `LLM_PROVIDER` and the matching API key (`ANTHROPIC_API_KEY`, `GROQ_API_KEY`, or `GEMINI_API_KEY`).
+3. Start the API and pgvector database:
+
+   ```sh
+   docker compose up --build
+   ```
+
+The API applies migrations, seeds the sample jobs and knowledge base, then serves the UI and API at `http://localhost:8000`. Check `http://localhost:8000/health`.
+
+### Python development
+
+Requires Python 3.11+ and a running PostgreSQL instance with the pgvector extension.
+
+```sh
 python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+# Windows PowerShell: .venv\Scripts\Activate.ps1
+# macOS/Linux: source .venv/bin/activate
 pip install -r requirements.txt
 alembic upgrade head
 uvicorn app.main:app --reload
 ```
 
-### Tests & Linting
-```bash
+Set `DATABASE_URL` and an LLM provider key in `.env`. For a database without seed data, run `python -m scripts.seed_jobs`.
+
+### Tests, lint, and CI
+
+```sh
 ruff check .
 pytest -v
 ```
+
+GitHub Actions runs lint and tests, builds the frontend and Docker image on pushes and pull requests to `main`. The manual workflow in [`.github/workflows/evals.yml`](.github/workflows/evals.yml) runs evaluation jobs and uploads the results artifact; LLM evaluation requires a configured provider secret.
+
+## Deploy to Render + Neon
+
+1. Create a Neon Postgres project and enable the `vector` extension (the Alembic migration also attempts to create it). Copy the Neon connection string, including SSL parameters.
+2. In Render, create a Blueprint from this repository and use [`render.yaml`](render.yaml). Supply `DATABASE_URL` and `GROQ_API_KEY` when prompted; the blueprint keeps these values out of the repository.
+3. Wait for the Docker build and health check. The container runs Alembic migrations on startup and seeds the sample jobs and guides when the database is empty.
+4. Verify the public deployment:
+
+   ```sh
+   curl -fsS https://YOUR-RENDER-SERVICE.onrender.com/health
+   curl -fsS -X POST https://YOUR-RENDER-SERVICE.onrender.com/chat \
+     -H "Content-Type: application/json" \
+     -H "X-Compass-User-Id: 00000000-0000-4000-8000-000000000001" \
+     -d "{\"message\":\"I'm a fresher looking for Python roles in Bengaluru.\"}"
+   ```
+
+The health response should report `"status":"ok"`, `"database":"ok"`, and `"pgvector":true`. Stage 9 is not complete until this live smoke test has passed.
+
+## What I would improve next
+
+- Replace synthetic seed postings with a broader, regularly refreshed set of verified job sources and better expiry handling.
+- Add human-reviewed relevance judgments and compare retrieval changes over time, rather than relying only on generated labels and an LLM judge.
+- Add authentication, user-data retention controls, and production monitoring before serving real users.
+- Expand accessibility, multilingual support, and feedback-driven ranking evaluation.
+- Add a larger integration suite against managed Postgres and validate backup/recovery procedures.
+
+## Interview prep: 10 questions
+
+1. **Why combine vector search and full-text search?** Semantic retrieval handles paraphrases; keyword search reliably matches exact skills and terms. RRF merges their rankings without requiring their raw scores to be directly comparable.
+2. **How is the final job order produced?** SQL hard filters eliminate ineligible jobs first; retrieval produces candidates; `rank_jobs` combines semantic similarity, skill overlap, preference fit, freshness, and interaction adjustments.
+3. **Why use a hand-written agent loop?** The bounded loop makes tool availability, iteration limits, validation, and job grounding explicit, while avoiding a framework dependency for a small fixed workflow.
+4. **How do you prevent made-up job recommendations?** Tools retrieve actual job records and responses must reference grounded IDs; the evaluation also checks referenced IDs against the available database IDs.
+5. **How does long-term memory handle repeated or changed facts?** Memory embeddings identify similar entries for deduplication, and conflict-aware updates replace stale preferences such as a changed city or salary target.
+6. **How are roadmap answers grounded?** Role-specific career-guide chunks are retrieved and supplied to roadmap generation, whose structured output carries citations to those chunks.
+7. **What does the retrieval evaluation measure?** Recall@10 measures how many labelled relevant jobs appear in the first ten; nDCG@10 also rewards putting the most relevant jobs nearer the top.
+8. **What do the current evaluation results say?** Hybrid plus reranking achieved nDCG@10 of 0.8322, while hybrid alone had the highest Recall@10 at 0.7602. This trade-off suggests reranking improves ordering but does not increase recall in this run.
+9. **How is the application deployed?** A multi-stage Docker build exports the Next.js UI and packages it with FastAPI; Render starts the container, Alembic applies migrations, and the app connects to Neon using an SSL-normalized async PostgreSQL URL.
+10. **What would you address before production use?** Verified job freshness, authentication and privacy controls, operational monitoring, human-reviewed evaluation data, and managed-database reliability are the highest priorities.

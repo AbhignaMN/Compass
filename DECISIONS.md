@@ -26,3 +26,5 @@ One-line log of non-obvious choices made while building **Compass** (for easy re
 - **Unified `/feedback` endpoint mapping thumbs up/down to `interactions` (`saved`/`dismissed`)**: Feeds explicit UI reactions directly into `rank_jobs` boosts and penalties without a second table.
 - **Next.js App Router static export (`output: 'export'`) served by FastAPI**: Delivers a rich TypeScript + Tailwind + Framer Motion SPA inside a single Docker container and single Render web service with zero CORS friction.
 - **CSS-variable theme tokens (`[data-theme="colourful|midnight|mahogany"]`)**: Lets every component, card, chip, topo pattern, and SVG compass needle switch palettes smoothly with zero runtime re-styling hacks.
+- **Automatic 429 retry-with-backoff in `LLMClient`**: Parses provider `Retry-After` / `"try again in Xs"` hints so free-tier TPM spikes recover cleanly without dropping chat turns or eval runs.
+- **Manual-dispatch GitHub Actions workflow for LLM evals (`.github/workflows/evals.yml`)**: Runs lint, unit tests, frontend build, and Docker build on every push while keeping paid/rate-limited LLM-as-judge runs opt-in.

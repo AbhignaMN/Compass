@@ -43,13 +43,13 @@ Work proceeds in vertical slices: build -> test -> commit -> push to `origin/mai
   - [x] Three themes: Colourful (light), Midnight (dark navy), Mahogany (dark leather) with animated compass toggle
   - [x] Streaming chat, compass-dial fit scores, journey roadmap timeline, editable "Your profile" panel
   - [x] Desktop & mobile screenshots across all three palettes in `docs/screenshots/`
-- [ ] **Stage 8: Evals + results table**
-  - [ ] Retrieval evals: 50 labelled test profiles, Recall@10 & nDCG@10 for vector-only, keyword-only, hybrid, hybrid+rerank -> `evals/results.md`
-  - [ ] Generation evals: LLM-as-judge rubric (groundedness, relevance, actionability) on 30 conversations + hard `job_id` existence check
-  - [ ] Agent multi-turn tool & cross-session memory recall tests
-  - [ ] GitHub Actions CI (lint, unit tests on push; LLM evals on manual dispatch)
+- [x] **Stage 8: Evals + results table**
+  - [x] Retrieval evals: 50 labelled test profiles, Recall@10 & nDCG@10 for vector-only, keyword-only, hybrid, hybrid+rerank -> `evals/results.md`
+  - [x] Generation evals: LLM-as-judge rubric (groundedness, relevance, actionability) on 30 conversations + hard `job_id` existence check
+  - [x] Agent multi-turn tool & cross-session memory recall tests
+  - [x] GitHub Actions CI (lint, unit tests on push; LLM evals on manual dispatch)
 - [ ] **Stage 9: Deploy + smoke test**
-  - [ ] `render.yaml` + Neon Postgres (pgvector) setup + migrations on boot
+  - [x] Render Docker Blueprint with Neon connection settings + migrations on boot
   - [ ] Deploy live service, hit `/health`, run end-to-end smoke test against public URL
-- [ ] **Stage 10: README polish**
-  - [ ] Complete `README.md` with architecture Mermaid diagram, schema summary, hybrid search/ranking & memory explanations, real eval numbers, screenshots, Docker instructions, and "What I'd improve next"
+- [x] **Stage 10: README polish**
+  - [x] Complete `README.md` with architecture Mermaid diagram, schema summary, hybrid search/ranking & memory explanations, real eval numbers, screenshots, Docker instructions, "What I'd improve next", and 10 interview questions

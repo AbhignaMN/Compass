@@ -4,8 +4,10 @@ No agent frameworks (no LangChain). Translates a single clean internal message +
 format to either Anthropic Messages API or OpenAI-compatible Chat Completions (Groq/Gemini).
 """
 
+import asyncio
 import json
 import logging
+import re
 from dataclasses import dataclass, field
 from typing import Any
 
@@ -192,12 +194,22 @@ class LLMClient:
             "Content-Type": "application/json",
         }
         async with httpx.AsyncClient(timeout=httpx.Timeout(45.0)) as client:
-            resp = await client.post(endpoint, headers=headers, json=payload)
-            if resp.status_code == 400 and json_mode and "json_validate_failed" in resp.text:
-                # Fallback gracefully if provider-side JSON grammar rejected reasoning tokens
-                logger.warning("Retrying %s call without strict response_format", provider)
-                payload.pop("response_format", None)
+            resp: httpx.Response | None = None
+            for attempt in range(4):
                 resp = await client.post(endpoint, headers=headers, json=payload)
+                if resp.status_code == 400 and json_mode and "json_validate_failed" in resp.text:
+                    # Fallback gracefully if provider-side JSON grammar rejected reasoning tokens
+                    logger.warning("Retrying %s call without strict response_format", provider)
+                    payload.pop("response_format", None)
+                    resp = await client.post(endpoint, headers=headers, json=payload)
+                if resp.status_code == 429 and attempt < 3:
+                    wait_s = _parse_retry_delay_seconds(resp)
+                    logger.warning("LLM %s rate limited (429); sleeping %.2fs before retry", provider, wait_s)
+                    await asyncio.sleep(wait_s)
+                    continue
+                break
+
+            assert resp is not None
             if resp.status_code >= 400:
                 logger.error("LLM %s HTTP %s: %s", provider, resp.status_code, resp.text[:400])
                 resp.raise_for_status()
@@ -230,6 +242,25 @@ class LLMClient:
             provider=provider,
             model=model,
         )
+
+
+_RETRY_SECONDS_RE = re.compile(r"try again in\s+([0-9]+(?:\.[0-9]+)?)\s*(ms|s)", re.IGNORECASE)
+
+
+def _parse_retry_delay_seconds(resp: httpx.Response) -> float:
+    retry_after = resp.headers.get("retry-after")
+    if retry_after:
+        try:
+            return min(15.0, max(1.0, float(retry_after) + 0.4))
+        except ValueError:
+            pass
+    match = _RETRY_SECONDS_RE.search(resp.text or "")
+    if match:
+        val = float(match.group(1))
+        if match.group(2).lower() == "ms":
+            val /= 1000.0
+        return min(15.0, max(1.0, val + 0.6))
+    return 4.0
 
 
 def _to_anthropic_messages(messages: list[dict[str, Any]]) -> list[dict[str, Any]]:
