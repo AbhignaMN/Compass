@@ -3,6 +3,8 @@
 import json
 import math
 from pathlib import Path
+from types import SimpleNamespace
+from unittest.mock import AsyncMock, MagicMock
 
 from app.services.chunker import chunk_markdown
 from app.services.embeddings import (
@@ -13,6 +15,7 @@ from app.services.embeddings import (
     embedding_cache_info,
 )
 from app.services.skills import SKILL_TAXONOMY, extract_skills, normalize_skill_name
+from scripts import seed_jobs
 from scripts.ingest_jobs import (
     normalize_arbeitnow_job,
     normalize_remotive_job,
@@ -181,3 +184,37 @@ def test_local_fastembed_dimensions_semantics_and_cache() -> None:
     batch = embed_texts(["Data analyst SQL Power BI", "Cybersecurity SOC SIEM"])
     assert len(batch) == 2
     assert len(batch[0]) == 384
+
+
+async def test_job_seeding_releases_database_before_embedding(monkeypatch) -> None:
+    result = MagicMock()
+    result.all.return_value = []
+    session = SimpleNamespace(
+        execute=AsyncMock(return_value=result),
+        rollback=AsyncMock(),
+        add=MagicMock(),
+        flush=AsyncMock(),
+    )
+    job = {
+        "title": "Python Engineer",
+        "company": "Example",
+        "location": "Bengaluru",
+        "remote": False,
+        "salary_min": 30000,
+        "salary_max": 50000,
+        "description": "Build Python services.",
+        "source_url": "https://example.test/jobs/python-engineer",
+    }
+
+    def fake_embed_texts(texts: list[str], batch_size: int) -> list[list[float]]:
+        assert session.rollback.await_count == 1
+        assert len(texts) == 1
+        assert batch_size == 4
+        return [[0.0] * 384]
+
+    monkeypatch.setattr(seed_jobs, "embed_texts", fake_embed_texts)
+
+    stats = await seed_jobs.upsert_jobs_batch(session, [job], {"python": 1})
+
+    assert stats["inserted"] == 1
+    assert stats["embedded"] == 1
