@@ -107,7 +107,7 @@ GitHub Actions runs lint and tests, builds the frontend and Docker image on push
 ## Deploy to Render + Neon
 
 1. Create a Neon Postgres project and enable the `vector` extension (the Alembic migration also attempts to create it). Copy the Neon connection string, including SSL parameters.
-2. In Render, create a Blueprint from this repository and use [`render.yaml`](render.yaml). Supply `DATABASE_URL` and `GROQ_API_KEY` when prompted; the blueprint keeps these values out of the repository.
+2. In Render, create a Blueprint from this repository and use [`render.yaml`](render.yaml). It selects the Free web-service plan. Supply `DATABASE_URL` and `GROQ_API_KEY` when prompted; the blueprint keeps these values out of the repository.
 3. Wait for the Docker build and health check. The container runs Alembic migrations on startup and seeds the sample jobs and guides when the database is empty.
 4. Verify the public deployment:
 
@@ -118,6 +118,8 @@ GitHub Actions runs lint and tests, builds the frontend and Docker image on push
      -H "X-Compass-User-Id: 00000000-0000-4000-8000-000000000001" \
      -d "{\"message\":\"I'm a fresher looking for Python roles in Bengaluru.\"}"
    ```
+
+The Free web-service plan can spin down after inactivity, so the first request after idle may take about a minute. It has resource and monthly usage limits; review Render's current Free plan limits before deploying.
 
 The health response should report `"status":"ok"`, `"database":"ok"`, and `"pgvector":true`. Stage 9 is not complete until this live smoke test has passed.
 
