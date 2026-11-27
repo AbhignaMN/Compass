@@ -144,7 +144,7 @@ async def upsert_jobs_batch(
         )
         for _, item, extracted in changed_jobs
     ]
-    vectors = embed_texts(embed_inputs, batch_size=64)
+    vectors = embed_texts(embed_inputs, batch_size=4)
     stats["embedded"] = len(vectors)
 
     for (job_id, _, extracted), vector in zip(changed_jobs, vectors, strict=True):
@@ -192,7 +192,7 @@ async def seed_kb_chunks(session: AsyncSession, kb_dir: Path = DEFAULT_KB_DIR) -
         )
         all_chunks.extend(chunks)
 
-    vectors = embed_texts([f"{c.title}\n{c.text}" for c in all_chunks], batch_size=32)
+    vectors = embed_texts([f"{c.title}\n{c.text}" for c in all_chunks], batch_size=4)
 
     await session.execute(delete(KBChunk).where(KBChunk.source_url.in_(source_urls)))
     for chunk, vector in zip(all_chunks, vectors, strict=True):

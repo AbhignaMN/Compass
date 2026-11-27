@@ -63,7 +63,7 @@ def load_indexed_seed_jobs(seed_path: Path = SEED_PATH) -> list[IndexedSeedJob]:
         )
         for j, ext in zip(raw_jobs, extracted_all, strict=True)
     ]
-    vectors = embed_texts(embed_inputs, batch_size=64)
+    vectors = embed_texts(embed_inputs, batch_size=4)
 
     indexed: list[IndexedSeedJob] = []
     for raw, ext, vec in zip(raw_jobs, extracted_all, vectors, strict=True):

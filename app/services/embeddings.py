@@ -33,6 +33,7 @@ def get_embedding_model() -> Any:
             _embedding_model = TextEmbedding(
                 model_name=settings.embedding_model,
                 cache_dir=settings.embedding_cache_dir,
+                threads=1,
             )
     return _embedding_model
 
@@ -40,7 +41,7 @@ def get_embedding_model() -> Any:
 @lru_cache(maxsize=2048)
 def _embed_single_cached(normalized_text: str) -> tuple[float, ...]:
     model = get_embedding_model()
-    vec = next(model.embed([normalized_text]))
+    vec = next(model.embed([normalized_text], batch_size=1))
     return tuple(float(x) for x in vec.tolist())
 
 
@@ -52,7 +53,7 @@ def embed_text(text: str) -> list[float]:
     return list(_embed_single_cached(normalized))
 
 
-def embed_texts(texts: list[str], batch_size: int = 64) -> list[list[float]]:
+def embed_texts(texts: list[str], batch_size: int = 4) -> list[list[float]]:
     """Batch-embed documents for fast seeding and incremental ingestion."""
     if not texts:
         return []
